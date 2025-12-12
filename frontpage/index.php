@@ -1,7 +1,7 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
+$APPLICATION->SetPageProperty("main", "main");
 $APPLICATION->SetTitle("Главная страница");
-$APPLICATION->SetPageProperty("main page", "ulitka | Главная");
 ?>
   <div class="frontpage">
                 <section class="banner">

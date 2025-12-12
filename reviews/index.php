@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("ulitka");
+$APPLICATION->SetPageProperty("inner", "Отзывы");
+
 ?>  
  <div class="reviews">
       <div class="wrapper">

@@ -34,7 +34,7 @@ use Bitrix\Main\Page\Asset;
     <?php $APPLICATION->showHead(); ?>
 </head>
 
-<body class="main" id="body">
+<body class="<? $APPLICATION->ShowProperty('main', 'inner') ?>" id="body" id="body">
     <div id="panel">
         <?php $APPLICATION->ShowPanel(); ?>
     </div>
@@ -50,8 +50,6 @@ use Bitrix\Main\Page\Asset;
                     ),
                     false
                 ); ?>
-
-
                     <div class="header__info"><? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "template1",
@@ -73,11 +71,25 @@ use Bitrix\Main\Page\Asset;
                     </div>
 
 
-                    <div class="header__nav"><a class="header__nav-item" href="#">Сотрудничество</a><a
-                            class="header__nav-item" href="#">Гарантия и сервис</a><a class="header__nav-item"
-                            href="#">Полезные статьи</a>
+                    <div class="header__nav">
+                        <?php $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "header_top-menu",
+                            array(
+                                "ROOT_MENU_TYPE" => "top",
+                                "MAX_LEVEL" => "1",
+                                "CHILD_MENU_TYPE" => "top",
+                                "USE_EXT" => "N",
+                                "DELAY" => "N",
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_GET_VARS" => ""
+                            )
+                        ); ?>
                     </div>
-                    <div class="header__social"><? $APPLICATION->IncludeComponent(
+                    <div class="header__social"><?php $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "template1",
                         array(
@@ -89,11 +101,26 @@ use Bitrix\Main\Page\Asset;
                 </div>
                 <div class="header__bottom">
                     <div class="header__menu">
-                        <a class="header__menu-item" href="">О компании</a><a class="header__menu-item"
-                            href="">Контакты</a><a class="header__menu-item" href="">Отзывы</a>
+                          <?php $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "header_bottom-menu",
+                            array(
+                                "ROOT_MENU_TYPE" => "bottom",
+                                "MAX_LEVEL" => "1",
+                                "CHILD_MENU_TYPE" => "",
+                                "USE_EXT" => "N",
+                                "DELAY" => "N",
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "MENU_CACHE_TYPE" => "A",
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_GET_VARS" => ""
+                            )
+                        ); ?>
                     </div>
                 </div>
             </div>
+
             <div class="wrapper header--mobile">
                 <div class="header__top">
                     <div class="header__back custom-close"></div><a class="header__logo" href="./"><img
@@ -215,4 +242,3 @@ use Bitrix\Main\Page\Asset;
             </div>
         </header>
         <main>
-          

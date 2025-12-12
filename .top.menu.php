@@ -1,37 +1,22 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 $aMenuLinks = Array(
 	Array(
-		"Компаsadasdния", 
-		"company/", 
+		"Сотрудничество", 
+		"/collaboration/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Новоsssти", 
-		"news/", 
+		"Гарантия и сервис", 
+		"/guarantee/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Продукция", 
-		"products/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Услуги", 
-		"services/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контакты", 
-		"contacts/", 
+		"Полезные статьи", 
+		"/articles/", 
 		Array(), 
 		Array(), 
 		"" 
