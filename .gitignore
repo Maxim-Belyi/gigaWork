@@ -1,0 +1,17 @@
+/bitrix/
+/upload/
+/local/cache/
+/local/managed_cache/
+/local/html_cache/
+.docker
+*.log
+.env
+.idea/
+.vscode/
+/vendor/
+/bitrix
+.htaccess
+reset.php
+.env
+.idea
+qodana.yaml

@@ -1,0 +1,296 @@
+<?php
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
+    die();
+}
+use Bitrix\Main\Page\Asset;
+?>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php $APPLICATION->ShowTitle() ?></title>
+
+    <?php
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/main.css');
+
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/main.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/vendors.js');
+
+    ?>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="<?= SITE_TEMPLATE_PATH ?>/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="<?= SITE_TEMPLATE_PATH ?>/assets/img/favicons/favicon-32x32.png">
+    <link rel="manifest" href="<?= SITE_TEMPLATE_PATH ?>/assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="<?= SITE_TEMPLATE_PATH ?>/assets/img/favicons/safari-pinned-tab.svg" color="#00aba9">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <?php $APPLICATION->showHead(); ?>
+</head>
+
+<body class="main" id="body">
+    <div id="panel">
+        <?php $APPLICATION->ShowPanel(); ?>
+    </div>
+    <div class="layout">
+        <header class="header">
+            <div class="wrapper header--desktop">
+                <div class="header__top"><a class="header__logo" href="./"><img
+                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" width="164" alt="Ulitka"
+                            loading="lazy"></a>
+
+
+                    <div class="header__info"><? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",	
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",	
+                        ),
+                        false
+                    ); ?>
+                        <div class="header__info-schedule"><? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",	
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",	
+                        ),
+                        false
+                    ); ?></div>
+                    </div>
+
+
+                    <div class="header__nav"><a class="header__nav-item" href="#">Сотрудничество</a><a
+                            class="header__nav-item" href="#">Гарантия и сервис</a><a class="header__nav-item"
+                            href="#">Полезные статьи</a>
+                    </div>
+                    <div class="header__social"><? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",	
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",	
+                        ),
+                        false
+                    ); ?></div>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__menu">
+                        <a class="header__menu-item" href="">О компании</a><a class="header__menu-item"
+                            href="">Контакты</a><a class="header__menu-item" href="">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper header--mobile">
+                <div class="header__top">
+                    <div class="header__back custom-close"></div><a class="header__logo" href="./"><img
+                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" width="164" alt="Ulitka"
+                            loading="lazy"></a>
+                    <div class="header__burger"></div>
+                    <div class="header__mobilemenu">
+                        <div class="mobilemenu">
+                            <div class="wrapper">
+                                <div class="header__nav"><a class="header__nav-item" href="#">О компании</a><a
+                                        class="header__nav-item" href="#">Контакты</a><a class="header__nav-item"
+                                        href="#">Отзывы</a><a class="header__nav-item" href="#">Сотрудничество</a><a
+                                        class="header__nav-item" href="#">Гарантия и сервис</a><a
+                                        class="header__nav-item" href="#">Полезные статьи</a>
+                                </div>
+                                <div class="header__info"><a class="header__info-phone" href="tel:88003552225">8 800 355
+                                        22 25</a>
+                                    <div class="header__info-schedule">с 7 до 16 по МСК</div>
+                                </div>
+                                <div class="header__social"><a class="header__social-item" href="#" target="blank"><img
+                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/vk.svg" loading="lazy"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__catalogmenu">
+                        <div class="header__catalogmenu--close"></div>
+                        <div class="catalogmenu">
+                            <div class="wrapper">
+                                <div class="catalogmenu__list">
+                                    <div class="cm-item">
+                                        <div class="cm-item__top">
+                                            <div class="cm-item__top-img"><img
+                                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/catalogmenu-1.jpg"
+                                                    alt="" loading="lazy"></div>
+                                            <div class="cm-item__top-title">Душевые ограждения</div>
+                                        </div>
+                                        <div class="cm-item__content">
+                                            <div class="cm-link"><a class="cm-link__item" href="#">Угол</a><a
+                                                    class="cm-link__item" href="#">Ниша</a><a class="cm-link__item"
+                                                    href="#">Свободный вход</a><a class="cm-link__item"
+                                                    href="#">Ванна</a><a class="cm-link__item" href="#">Конфигуратор
+                                                    нестандартных изделий</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cm-item">
+                                        <div class="cm-item__top">
+                                            <div class="cm-item__top-img"><img
+                                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/catalogmenu-2.jpg"
+                                                    alt="" loading="lazy"></div>
+                                            <div class="cm-item__top-title">Душевые поддоны</div>
+                                        </div>
+                                        <div class="cm-item__content">
+                                            <div class="cm-link"><a class="cm-link__item" href="#">Lava</a><a
+                                                    class="cm-link__item" href="#">Volna</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cm-item">
+                                        <div class="cm-item__top">
+                                            <div class="cm-item__top-img"><img
+                                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/catalogmenu-3.jpg"
+                                                    alt="" loading="lazy"></div>
+                                            <div class="cm-item__top-title">Мебель для ванных комнат</div>
+                                        </div>
+                                        <div class="cm-item__content">
+                                            <div class="cm-link"><a class="cm-link__item" href="#">Стеллажи</a><a
+                                                    class="cm-link__item" href="#">Опоры под раковину</a><a
+                                                    class="cm-link__item" href="#">Зеркала</a><a class="cm-link__item"
+                                                    href="#">Тумбы</a><a class="cm-link__item" href="#">Пеналы</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cm-item">
+                                        <div class="cm-item__top">
+                                            <div class="cm-item__top-img"><img
+                                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/catalogmenu-4.jpg"
+                                                    alt="" loading="lazy"></div>
+                                            <div class="cm-item__top-title">Аксессуары</div>
+                                        </div>
+                                        <div class="cm-item__content">
+                                            <div class="cm-link"><a class="cm-link__item" href="#">Полки</a><a
+                                                    class="cm-link__item" href="#">Держатели для полотенец</a><a
+                                                    class="cm-link__item" href="#">Крючки для полотенец</a><a
+                                                    class="cm-link__item" href="#">Держатели туалетной бумаги</a><a
+                                                    class="cm-link__item" href="#">Наборы аксессуаров для ванной</a><a
+                                                    class="cm-link__item" href="#">Прочие аксессуары</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalogmenu__copyright">© Ulitka, 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="frontpage">
+                <section class="banner">
+                    <div class="banner__slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="banner__slider-img"><img
+                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/banner.jpg"
+                                            loading="lazy" alt=""></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="banner__slider-img"><img
+                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/catalog/banner.jpg" loading="lazy"
+                                            alt=""></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="banner__slider-img"><img
+                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/typical/banner.jpg" loading="lazy"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="banner__text">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="banner__title">Уют <br> может быть стильным</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="banner__title">Уют <br> может быть уютным 1</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="banner__title">Уют <br> может быть теплым 2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="wrapper">
+                        <div class="about__content">
+                            <div class="about__title">Собственное производство в России с 2000 года</div>
+                            <div class="about__slider">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="about__slider-item">
+                                                <h2>Собственное производство и высокий контроль качества</h2>
+                                                <p>Фабрика находится на территории России в Челябинской области, это
+                                                    существенно облегчает коммуникацию с покупателем.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="about__slider-item">Доставка в любой регион до 5 рабочих дней,
+                                                ответы на любые вопросы в режиме реального времени, предоставление
+                                                комплектующих для нашей продукции. </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="about__slider-item">Фабрика находится на территории России в
+                                                Челябинской области, это существенно облегчает коммуникацию с
+                                                покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
+                                                вопросы в режиме реального времени, предоставление комплектующих для
+                                                нашей продукции. </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="about__slider-item">Фабрика находится на территории России в
+                                                Челябинской области, это существенно облегчает коммуникацию с
+                                                покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
+                                                вопросы в режиме реального времени, предоставление комплектующих для
+                                                нашей продукции. Доставка в любой регион до 5 рабочих дней, ответы на
+                                                любые вопросы в режиме реального времени, предоставление комплектующих
+                                                для нашей продукции. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__slider-img">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
+                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
+                                                loading="lazy"></a></div>
+                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
+                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
+                                                loading="lazy"></a></div>
+                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
+                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
+                                                loading="lazy"></a></div>
+                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
+                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
+                                                loading="lazy"></a></div>
+                                </div>
+                                <div class="swiper-nav">
+                                    <div class="swiper-nav__prev"></div>
+                                    <div class="swiper-nav__pagination"></div>
+                                    <div class="swiper-nav__next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
