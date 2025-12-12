@@ -26,7 +26,7 @@
   </div>
 </footer>
 </div>
-
+</body>
 <div class="cookie">
   <div class="wrapper">
     <div class="cookie__content">
@@ -252,6 +252,5 @@
     </div>
   </div>
 </div>
-</body>
 
 </html>

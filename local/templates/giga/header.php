@@ -41,29 +41,35 @@ use Bitrix\Main\Page\Asset;
     <div class="layout">
         <header class="header">
             <div class="wrapper header--desktop">
-                <div class="header__top"><a class="header__logo" href="./"><img
-                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" width="164" alt="Ulitka"
-                            loading="lazy"></a>
+                <div class="header__top"><? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "template1",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_logo.php",
+                    ),
+                    false
+                ); ?>
 
 
                     <div class="header__info"><? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "template1",
                         array(
-                            "AREA_FILE_SHOW" => "file",	
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",	
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",
                         ),
                         false
                     ); ?>
                         <div class="header__info-schedule"><? $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "template1",
-                        array(
-                            "AREA_FILE_SHOW" => "file",	
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",	
-                        ),
-                        false
-                    ); ?></div>
+                            "bitrix:main.include",
+                            "template1",
+                            array(
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",
+                            ),
+                            false
+                        ); ?></div>
                     </div>
 
 
@@ -75,8 +81,8 @@ use Bitrix\Main\Page\Asset;
                         "bitrix:main.include",
                         "template1",
                         array(
-                            "AREA_FILE_SHOW" => "file",	
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",	
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",
                         ),
                         false
                     ); ?></div>
@@ -103,12 +109,34 @@ use Bitrix\Main\Page\Asset;
                                         class="header__nav-item" href="#">Гарантия и сервис</a><a
                                         class="header__nav-item" href="#">Полезные статьи</a>
                                 </div>
-                                <div class="header__info"><a class="header__info-phone" href="tel:88003552225">8 800 355
-                                        22 25</a>
-                                    <div class="header__info-schedule">с 7 до 16 по МСК</div>
+                                <div class="header__info"><? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "template1",
+                                    array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",
+                                    ),
+                                    false
+                                ); ?>
+                                    <div class="header__info-schedule"><? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "template1",
+                                        array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",
+                                        ),
+                                        false
+                                    ); ?></div>
                                 </div>
-                                <div class="header__social"><a class="header__social-item" href="#" target="blank"><img
-                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/vk.svg" loading="lazy"></a></div>
+                                <div class="header__social"><? $APPLICATION->IncludeComponent(
+                                    "bitrix:main.include",
+                                    "template1",
+                                    array(
+                                        "AREA_FILE_SHOW" => "file",
+                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",
+                                    ),
+                                    false
+                                ); ?></a></div>
                             </div>
                         </div>
                     </div>
@@ -187,110 +215,4 @@ use Bitrix\Main\Page\Asset;
             </div>
         </header>
         <main>
-            <div class="frontpage">
-                <section class="banner">
-                    <div class="banner__slider">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="banner__slider-img"><img
-                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/banner.jpg"
-                                            loading="lazy" alt=""></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="banner__slider-img"><img
-                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/catalog/banner.jpg" loading="lazy"
-                                            alt=""></div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="banner__slider-img"><img
-                                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/typical/banner.jpg" loading="lazy"
-                                            alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="banner__text">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="banner__title">Уют <br> может быть стильным</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="banner__title">Уют <br> может быть уютным 1</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="banner__title">Уют <br> может быть теплым 2</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </section>
-                <section class="about">
-                    <div class="wrapper">
-                        <div class="about__content">
-                            <div class="about__title">Собственное производство в России с 2000 года</div>
-                            <div class="about__slider">
-                                <div class="swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="about__slider-item">
-                                                <h2>Собственное производство и высокий контроль качества</h2>
-                                                <p>Фабрика находится на территории России в Челябинской области, это
-                                                    существенно облегчает коммуникацию с покупателем.</p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="about__slider-item">Доставка в любой регион до 5 рабочих дней,
-                                                ответы на любые вопросы в режиме реального времени, предоставление
-                                                комплектующих для нашей продукции. </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="about__slider-item">Фабрика находится на территории России в
-                                                Челябинской области, это существенно облегчает коммуникацию с
-                                                покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
-                                                вопросы в режиме реального времени, предоставление комплектующих для
-                                                нашей продукции. </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="about__slider-item">Фабрика находится на территории России в
-                                                Челябинской области, это существенно облегчает коммуникацию с
-                                                покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
-                                                вопросы в режиме реального времени, предоставление комплектующих для
-                                                нашей продукции. Доставка в любой регион до 5 рабочих дней, ответы на
-                                                любые вопросы в режиме реального времени, предоставление комплектующих
-                                                для нашей продукции. </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__slider-img">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                                loading="lazy"></a></div>
-                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                                loading="lazy"></a></div>
-                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                                loading="lazy"></a></div>
-                                    <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                                src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                                loading="lazy"></a></div>
-                                </div>
-                                <div class="swiper-nav">
-                                    <div class="swiper-nav__prev"></div>
-                                    <div class="swiper-nav__pagination"></div>
-                                    <div class="swiper-nav__next"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+          
