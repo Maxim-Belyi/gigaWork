@@ -50,7 +50,7 @@ use Bitrix\Main\Page\Asset;
                     ),
                     false
                 ); ?>
-                    <div class="header__info"><a class="header__info-phone" href="<? $APPLICATION->IncludeComponent(
+                    <div class="header__info"><? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "template1",
                         array(
@@ -58,15 +58,7 @@ use Bitrix\Main\Page\Asset;
                             "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_phone.php",
                         ),
                         false
-                    ); ?>"><? $APPLICATION->IncludeComponent(
-                         "bitrix:main.include",
-                         "template1",
-                         array(
-                             "AREA_FILE_SHOW" => "file",
-                             "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_phone.php",
-                         ),
-                         false
-                     ); ?></a>
+                    ); ?>
                         <div class="header__info-schedule"><? $APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "template1",

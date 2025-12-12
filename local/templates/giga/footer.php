@@ -2,38 +2,59 @@
 <footer class="footer">
   <div class="wrapper">
     <div class="footer__top">
-     <? $APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "template1",
-                    array(
-                        "AREA_FILE_SHOW" => "file",
-                        "PATH" => SITE_TEMPLATE_PATH . "/includes/logo-black.php",
-                    ),
-                    false
-                ); ?>
-      <div class="footer__menu"><a class="footer__menu-item" href="#">Сотрудничество</a><a class="footer__menu-item"
-          href="#">Гарантия и сервис</a><a class="footer__menu-item" href="#">Полезные статьи</a>
-      </div>
-      <div class="footer__menu"><a class="footer__menu-item" href="#">О компании</a><a class="footer__menu-item"
-          href="#">Контакты</a><a class="footer__menu-item" href="#">Отзывы</a>
-      </div>
-      <div class="footer__info"><a href="<? $APPLICATION->IncludeComponent(
+      <? $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "template1",
         array(
           "AREA_FILE_SHOW" => "file",
-          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/logo-black.php",
         ),
         false
-      ); ?>"><? $APPLICATION->IncludeComponent(
-        "bitrix:main.include",
-        "template1",
+      ); ?>
+      <div class="footer__menu">
+        <? $APPLICATION->IncludeComponent(
+          "bitrix:menu",
+          "footer_left-menu",
+          array(
+            "ROOT_MENU_TYPE" => "top",
+            "MAX_LEVEL" => "1",
+            "CHILD_MENU_TYPE" => "",
+            "USE_EXT" => "N",
+            "DELAY" => "N",
+            "ALLOW_MULTI_SELECT" => "N",
+            "MENU_CACHE_TYPE" => "A",
+            "MENU_CACHE_TIME" => "3600",
+            "MENU_CACHE_USE_GROUPS" => "Y",
+            "MENU_CACHE_GET_VARS" => ""
+          )
+        ); ?>
+      </div>
+      <div class="footer__menu"><? $APPLICATION->IncludeComponent(
+        "bitrix:menu",
+        "footer_right-menu",
         array(
-          "AREA_FILE_SHOW" => "file",
-          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
-        ),
-        false
-      ); ?></a>
+          "ROOT_MENU_TYPE" => "bottom",
+          "MAX_LEVEL" => "1",
+          "CHILD_MENU_TYPE" => "",
+          "USE_EXT" => "N",
+          "DELAY" => "N",
+          "ALLOW_MULTI_SELECT" => "N",
+          "MENU_CACHE_TYPE" => "A",
+          "MENU_CACHE_TIME" => "3600",
+          "MENU_CACHE_USE_GROUPS" => "Y",
+          "MENU_CACHE_GET_VARS" => ""
+        )
+      ); ?>
+      </div>
+      <div class="footer__info"><? $APPLICATION->IncludeComponent(
+         "bitrix:main.include",
+         "template1",
+         array(
+           "AREA_FILE_SHOW" => "file",
+           "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
+         ),
+         false
+       ); ?>
         <div class="footer__schedule"><? $APPLICATION->IncludeComponent(
           "bitrix:main.include",
           "template1",
@@ -55,7 +76,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__social mobile"><<?php $APPLICATION->IncludeComponent(
+      <div class="footer__social mobile"><?php $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "template1",
         array(
@@ -65,10 +86,36 @@
         false
       ); ?></a>
       </div>
-      <div class="footer__text">Все права защищены</div>
-      <div class="footer__copyright">© Ulitka, 2022</div><a class="footer__email"
-        href="mailto:ulitkamarket@info.ru">ulitkamarket@info.ru</a><a class="footer__developers"
-        href="https://www.xpage.ru/" target="blank"></a>
+      <div class="footer__text"><?php $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/all-rights.php",
+        ),
+        false
+      ); ?></div>
+      <div class="footer__copyright">
+        <?php $APPLICATION->IncludeComponent(
+          "bitrix:main.include",
+          "template1",
+          array(
+            "AREA_FILE_SHOW" => "file",
+            "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/copyright.php",
+          ),
+          false
+        ); ?>
+      </div>
+      <?php $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/email.php",
+        ),
+        false
+      ); ?>
+      <a class="footer__developers" href="https://www.xpage.ru/" target="blank"></a>
     </div>
   </div>
 </footer>
