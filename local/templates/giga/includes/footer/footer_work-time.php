@@ -1,0 +1,1 @@
+<a class="footer__phone" href="tel:+78003552225">+7 (800) 355-22-25</a>

@@ -9,15 +9,38 @@
       <div class="footer__menu"><a class="footer__menu-item" href="#">О компании</a><a class="footer__menu-item"
           href="#">Контакты</a><a class="footer__menu-item" href="#">Отзывы</a>
       </div>
-      <div class="footer__info"><a class="footer__phone" href="tel:+78003552225">+7 (800) 355-22-25</a>
-        <div class="footer__schedule">с 7:00 до 16:00 по МСК</div>
+      <div class="footer__info"><? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "template1",
+                                        array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_work-time.php",
+                                        ),
+                                        false
+                                    ); ?>
+        <div class="footer__schedule"><? $APPLICATION->IncludeComponent(
+                                        "bitrix:main.include",
+                                        "template1",
+                                        array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_work-time.php",
+                                        ),
+                                        false
+                                    ); ?></div>
         <div class="footer__social"><a class="footer__social-item" href="#" target="blank"><img
               src="<?= SITE_TEMPLATE_PATH ?>/assets/img/vk.svg" alt="" loading="lazy"></a></div>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__social mobile"><a class="footer__social-item" href="#" target="blank"><img
-            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/vk.svg" alt="" loading="lazy"></a></div>
+      <div class="footer__social mobile"><<?php $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/vk-logo.php",
+                        ),
+                        false
+                    ); ?></a></div>
       <div class="footer__text">Все права защищены</div>
       <div class="footer__copyright">© Ulitka, 2022</div><a class="footer__email"
         href="mailto:ulitkamarket@info.ru">ulitkamarket@info.ru</a><a class="footer__developers"

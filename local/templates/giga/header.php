@@ -46,7 +46,7 @@ use Bitrix\Main\Page\Asset;
                     "template1",
                     array(
                         "AREA_FILE_SHOW" => "file",
-                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_logo.php",
+                        "PATH" => SITE_TEMPLATE_PATH . "/includes/logo.php",
                     ),
                     false
                 ); ?>
@@ -55,7 +55,7 @@ use Bitrix\Main\Page\Asset;
                         "template1",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_phone.php",
                         ),
                         false
                     ); ?>
@@ -64,7 +64,7 @@ use Bitrix\Main\Page\Asset;
                             "template1",
                             array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",
+                                "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_work-time.php",
                             ),
                             false
                         ); ?></div>
@@ -94,7 +94,7 @@ use Bitrix\Main\Page\Asset;
                         "template1",
                         array(
                             "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/vk-logo.php",
                         ),
                         false
                     ); ?></div>
@@ -123,9 +123,15 @@ use Bitrix\Main\Page\Asset;
 
             <div class="wrapper header--mobile">
                 <div class="header__top">
-                    <div class="header__back custom-close"></div><a class="header__logo" href="./"><img
-                            src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" width="164" alt="Ulitka"
-                            loading="lazy"></a>
+                    <div class="header__back custom-close"></div><? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "template1",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "PATH" => SITE_TEMPLATE_PATH . "/includes/logo.php",
+                    ),
+                    false
+                ); ?>
                     <div class="header__burger"></div>
                     <div class="header__mobilemenu">
                         <div class="mobilemenu">
@@ -141,7 +147,7 @@ use Bitrix\Main\Page\Asset;
                                     "template1",
                                     array(
                                         "AREA_FILE_SHOW" => "file",
-                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",
+                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_phone.php",
                                     ),
                                     false
                                 ); ?>
@@ -150,7 +156,7 @@ use Bitrix\Main\Page\Asset;
                                         "template1",
                                         array(
                                             "AREA_FILE_SHOW" => "file",
-                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header_work-time.php",
+                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_work-time.php",
                                         ),
                                         false
                                     ); ?></div>
@@ -160,7 +166,7 @@ use Bitrix\Main\Page\Asset;
                                     "template1",
                                     array(
                                         "AREA_FILE_SHOW" => "file",
-                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header_vk-logo.php",
+                                        "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_vk-logo.php",
                                     ),
                                     false
                                 ); ?></a></div>
