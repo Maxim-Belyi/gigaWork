@@ -1,46 +1,70 @@
 </main>
 <footer class="footer">
   <div class="wrapper">
-    <div class="footer__top"><a class="footer__logo" href="/"><img
-          src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo-black.svg" alt="" loading="lazy"></a>
+    <div class="footer__top">
+     <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "template1",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "PATH" => SITE_TEMPLATE_PATH . "/includes/logo-black.php",
+                    ),
+                    false
+                ); ?>
       <div class="footer__menu"><a class="footer__menu-item" href="#">Сотрудничество</a><a class="footer__menu-item"
           href="#">Гарантия и сервис</a><a class="footer__menu-item" href="#">Полезные статьи</a>
       </div>
       <div class="footer__menu"><a class="footer__menu-item" href="#">О компании</a><a class="footer__menu-item"
           href="#">Контакты</a><a class="footer__menu-item" href="#">Отзывы</a>
       </div>
-      <div class="footer__info"><? $APPLICATION->IncludeComponent(
-                                        "bitrix:main.include",
-                                        "template1",
-                                        array(
-                                            "AREA_FILE_SHOW" => "file",
-                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_work-time.php",
-                                        ),
-                                        false
-                                    ); ?>
+      <div class="footer__info"><a href="<? $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
+        ),
+        false
+      ); ?>"><? $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
+        ),
+        false
+      ); ?></a>
         <div class="footer__schedule"><? $APPLICATION->IncludeComponent(
-                                        "bitrix:main.include",
-                                        "template1",
-                                        array(
-                                            "AREA_FILE_SHOW" => "file",
-                                            "PATH" => SITE_TEMPLATE_PATH . "/includes/header/header_work-time.php",
-                                        ),
-                                        false
-                                    ); ?></div>
-        <div class="footer__social"><a class="footer__social-item" href="#" target="blank"><img
-              src="<?= SITE_TEMPLATE_PATH ?>/assets/img/vk.svg" alt="" loading="lazy"></a></div>
+          "bitrix:main.include",
+          "template1",
+          array(
+            "AREA_FILE_SHOW" => "file",
+            "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_work-time.php",
+          ),
+          false
+        ); ?></div>
+        <div class="footer__social"><a class="footer__social-item" href="#" target="blank"><? $APPLICATION->IncludeComponent(
+          "bitrix:main.include",
+          "template1",
+          array(
+            "AREA_FILE_SHOW" => "file",
+            "PATH" => SITE_TEMPLATE_PATH . "/includes/vk-logo.php",
+          ),
+          false
+        ); ?></a></div>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="footer__social mobile"><<?php $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "template1",
-                        array(
-                            "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/vk-logo.php",
-                        ),
-                        false
-                    ); ?></a></div>
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/vk-logo.php",
+        ),
+        false
+      ); ?></a>
+      </div>
       <div class="footer__text">Все права защищены</div>
       <div class="footer__copyright">© Ulitka, 2022</div><a class="footer__email"
         href="mailto:ulitkamarket@info.ru">ulitkamarket@info.ru</a><a class="footer__developers"

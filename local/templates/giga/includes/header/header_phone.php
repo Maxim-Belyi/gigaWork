@@ -1,1 +1,1 @@
-<a class="header__info-phone" href="tel:88003552225">8 800 355 22 25</a>
+8 800 355 22 25

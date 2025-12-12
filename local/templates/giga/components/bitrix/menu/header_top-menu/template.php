@@ -3,7 +3,7 @@
 
 <?php if (!empty($arResult)): ?>
     <?php foreach ($arResult as $arItem): ?>
-        <a class="header__nav-item <?php if ($arItem["SELECTED"]): ?>active<?php endif ?>"href="<?= $arItem["LINK"] ?>">
+        <a class="header__nav-item" href="<?= $arItem["LINK"] ?>">
             <?= $arItem["TEXT"] ?></a>
     <?php endforeach ?>
 <?php endif ?>
