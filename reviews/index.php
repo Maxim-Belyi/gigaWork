@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("ulitka");
+$APPLICATION->SetTitle("Ulitka");
 $APPLICATION->SetPageProperty("inner", "Отзывы");
 
 ?>  

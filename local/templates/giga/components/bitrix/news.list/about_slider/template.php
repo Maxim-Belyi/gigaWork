@@ -27,7 +27,7 @@
                     <?php foreach ($arResult["ITEMS"] as $arItem): ?>
                         <div class="swiper-slide">
                             <?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
-                                <a class="about__img" href="./about.html">
+                                <a class="about__img" href="/about/">
                                     <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>" loading="lazy"
                                         alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?: $arItem["NAME"] ?>">
                                 </a>
