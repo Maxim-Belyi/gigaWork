@@ -126,17 +126,18 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                 )
             ); ?>
 
-
-
-
-            <div class="about__direction">
+           <div class="about__direction">
                 <div class="about__direction-title">
-                    4 направления нашей работы
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/about/about_our-work.php"
+                        )
+                    ); ?>
                 </div>
-
-
                 <div class="a-direction">
-
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
                         "about_cards",
@@ -159,6 +160,7 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                     ); ?>
                 </div>
             </div>
+
             <div class="about__slide">
                 <div class="typical__slider">
                     <div class="swiper">

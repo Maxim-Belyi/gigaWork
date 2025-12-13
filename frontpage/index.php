@@ -79,7 +79,7 @@ $APPLICATION->SetTitle("Главная страница");
 
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:news.list",
-                    "about_slider",
+                    "frontpage_slider",
                     array(
                         "ACTIVE_DATE_FORMAT" => "d.m.Y",
                         "ADD_SECTIONS_CHAIN" => "N",

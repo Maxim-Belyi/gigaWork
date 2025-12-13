@@ -41,7 +41,8 @@ use Bitrix\Main\Page\Asset;
     <div class="layout">
         <header class="header">
             <div class="wrapper header--desktop">
-                <div class="header__top"><? $APPLICATION->IncludeComponent(
+                <div class="header__top">
+                    <? $APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "template1",
                     array(
