@@ -5,63 +5,63 @@ $APPLICATION->SetTitle("Главная страница");
 ?>
 <div class="frontpage">
     <section class="banner">
-         <?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"main_slider",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"CHECK_DATES" => "Y",
-		"DETAIL_URL" => "",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_NAME" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array("PREVIEW_TEXT","PREVIEW_PICTURE",""),
-		"FILTER_NAME" => "",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => 5,
-		"IBLOCK_TYPE" => "Content",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"INCLUDE_SUBSECTIONS" => "Y",
-		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
-		"PAGER_BASE_LINK_ENABLE" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "Новости",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array("",""),
-		"SET_BROWSER_TITLE" => "Y",
-		"SET_LAST_MODIFIED" => "N",
-		"SET_META_DESCRIPTION" => "Y",
-		"SET_META_KEYWORDS" => "Y",
-		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "N",
-		"SHOW_404" => "N",
-		"SORT_BY1" => "SORT",
-		"SORT_BY2" => "ID",
-		"SORT_ORDER1" => "ASC",
-		"SORT_ORDER2" => "DESC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
-);?>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:news.list",
+            "main_slider",
+            array(
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                "ADD_SECTIONS_CHAIN" => "N",
+                "AJAX_MODE" => "N",
+                "AJAX_OPTION_ADDITIONAL" => "",
+                "AJAX_OPTION_HISTORY" => "N",
+                "AJAX_OPTION_JUMP" => "N",
+                "AJAX_OPTION_STYLE" => "Y",
+                "CACHE_FILTER" => "N",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "CHECK_DATES" => "Y",
+                "DETAIL_URL" => "",
+                "DISPLAY_BOTTOM_PAGER" => "Y",
+                "DISPLAY_DATE" => "Y",
+                "DISPLAY_NAME" => "Y",
+                "DISPLAY_PICTURE" => "Y",
+                "DISPLAY_PREVIEW_TEXT" => "Y",
+                "DISPLAY_TOP_PAGER" => "N",
+                "FIELD_CODE" => array("PREVIEW_TEXT", "PREVIEW_PICTURE", ""),
+                "FILTER_NAME" => "",
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                "IBLOCK_ID" => 5,
+                "IBLOCK_TYPE" => "Content",
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                "INCLUDE_SUBSECTIONS" => "Y",
+                "MESSAGE_404" => "",
+                "NEWS_COUNT" => "20",
+                "PAGER_BASE_LINK_ENABLE" => "N",
+                "PAGER_DESC_NUMBERING" => "N",
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                "PAGER_SHOW_ALL" => "N",
+                "PAGER_SHOW_ALWAYS" => "N",
+                "PAGER_TEMPLATE" => ".default",
+                "PAGER_TITLE" => "Новости",
+                "PARENT_SECTION" => "",
+                "PARENT_SECTION_CODE" => "",
+                "PREVIEW_TRUNCATE_LEN" => "",
+                "PROPERTY_CODE" => array("", ""),
+                "SET_BROWSER_TITLE" => "Y",
+                "SET_LAST_MODIFIED" => "N",
+                "SET_META_DESCRIPTION" => "Y",
+                "SET_META_KEYWORDS" => "Y",
+                "SET_STATUS_404" => "N",
+                "SET_TITLE" => "N",
+                "SHOW_404" => "N",
+                "SORT_BY1" => "SORT",
+                "SORT_BY2" => "ID",
+                "SORT_ORDER1" => "ASC",
+                "SORT_ORDER2" => "ASC",
+                "STRICT_SECTION_CHECK" => "N"
+            )
+        ); ?>
 
     </section>
     <section class="about">
@@ -76,63 +76,64 @@ $APPLICATION->SetTitle("Главная страница");
                     ),
                     false
                 ); ?></div>
-                <div class="about__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="about__slider-item">
-                                    <h2>Собственное производство и высокий контроль качества</h2>
-                                    <p>Фабрика находится на территории России в Челябинской области, это
-                                        существенно облегчает коммуникацию с покупателем.</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="about__slider-item">Доставка в любой регион до 5 рабочих дней,
-                                    ответы на любые вопросы в режиме реального времени, предоставление
-                                    комплектующих для нашей продукции. </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="about__slider-item">Фабрика находится на территории России в
-                                    Челябинской области, это существенно облегчает коммуникацию с
-                                    покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
-                                    вопросы в режиме реального времени, предоставление комплектующих для
-                                    нашей продукции. </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="about__slider-item">Фабрика находится на территории России в
-                                    Челябинской области, это существенно облегчает коммуникацию с
-                                    покупателем. Доставка в любой регион до 5 рабочих дней, ответы на любые
-                                    вопросы в режиме реального времени, предоставление комплектующих для
-                                    нашей продукции. Доставка в любой регион до 5 рабочих дней, ответы на
-                                    любые вопросы в режиме реального времени, предоставление комплектующих
-                                    для нашей продукции. </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="about__slider-img">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                    loading="lazy"></a></div>
-                        <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                    loading="lazy"></a></div>
-                        <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                    loading="lazy"></a></div>
-                        <div class="swiper-slide"><a class="about__img" href="./about.html"><img
-                                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/frontpage/about.jpg" alt=""
-                                    loading="lazy"></a></div>
-                    </div>
-                    <div class="swiper-nav">
-                        <div class="swiper-nav__prev"></div>
-                        <div class="swiper-nav__pagination"></div>
-                        <div class="swiper-nav__next"></div>
-                    </div>
-                </div>
+
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:news.list",
+                    "about_slider",
+                    array(
+                        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                        "ADD_SECTIONS_CHAIN" => "N",
+                        "AJAX_MODE" => "N",
+                        "AJAX_OPTION_ADDITIONAL" => "",
+                        "AJAX_OPTION_HISTORY" => "N",
+                        "AJAX_OPTION_JUMP" => "N",
+                        "AJAX_OPTION_STYLE" => "Y",
+                        "CACHE_FILTER" => "N",
+                        "CACHE_GROUPS" => "Y",
+                        "CACHE_TIME" => "36000000",
+                        "CACHE_TYPE" => "A",
+                        "CHECK_DATES" => "Y",
+                        "DETAIL_URL" => "",
+                        "DISPLAY_BOTTOM_PAGER" => "Y",
+                        "DISPLAY_DATE" => "Y",
+                        "DISPLAY_NAME" => "Y",
+                        "DISPLAY_PICTURE" => "Y",
+                        "DISPLAY_PREVIEW_TEXT" => "Y",
+                        "DISPLAY_TOP_PAGER" => "N",
+                        "FIELD_CODE" => array("PREVIEW_TEXT", "PREVIEW_PICTURE", ""),
+                        "FILTER_NAME" => "",
+                        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                        "IBLOCK_ID" => 6,
+                        "IBLOCK_TYPE" => "Content",
+                        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                        "INCLUDE_SUBSECTIONS" => "Y",
+                        "MESSAGE_404" => "",
+                        "NEWS_COUNT" => "20",
+                        "PAGER_BASE_LINK_ENABLE" => "N",
+                        "PAGER_DESC_NUMBERING" => "N",
+                        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                        "PAGER_SHOW_ALL" => "N",
+                        "PAGER_SHOW_ALWAYS" => "N",
+                        "PAGER_TEMPLATE" => ".default",
+                        "PAGER_TITLE" => "Новости",
+                        "PARENT_SECTION" => "",
+                        "PARENT_SECTION_CODE" => "",
+                        "PREVIEW_TRUNCATE_LEN" => "",
+                        "PROPERTY_CODE" => array("", ""),
+                        "SET_BROWSER_TITLE" => "Y",
+                        "SET_LAST_MODIFIED" => "N",
+                        "SET_META_DESCRIPTION" => "Y",
+                        "SET_META_KEYWORDS" => "Y",
+                        "SET_STATUS_404" => "N",
+                        "SET_TITLE" => "N",
+                        "SHOW_404" => "N",
+                        "SORT_BY1" => "SORT",
+                        "SORT_BY2" => "ID",
+                        "SORT_ORDER1" => "ASC",
+                        "SORT_ORDER2" => "ASC",
+                        "STRICT_SECTION_CHECK" => "N"
+                    )
+                ); ?>
             </div>
         </div>
     </section>
