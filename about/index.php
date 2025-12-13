@@ -126,7 +126,7 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                 )
             ); ?>
 
-           <div class="about__direction">
+            <div class="about__direction">
                 <div class="about__direction-title">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
@@ -162,29 +162,33 @@ $APPLICATION->SetPageProperty("inner", "О компании");
             </div>
 
             <div class="about__slide">
-                <div class="typical__slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/typical/banner.jpg" alt="" loading="lazy">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/typical/banner.jpg" alt="" loading="lazy">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/typical/banner.jpg" alt="" loading="lazy">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/typical/banner.jpg" alt="" loading="lazy">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/typical/banner.jpg" alt="" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination">
-                        </div>
-                    </div>
-                </div>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:news.list",
+                    "about_slider",
+                    array(
+                        "IBLOCK_ID" => 11,
+                        "CACHE_TIME" => "36000000",
+                        "FIELD_CODE" => array("PREVIEW_PICTURE", ""),
+                        "FILTER_NAME" => "",
+                        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                        "IBLOCK_TYPE" => "Content",
+                        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                        "INCLUDE_SUBSECTIONS" => "Y",
+                        "MESSAGE_404" => "",
+                        "NEWS_COUNT" => "20",
+                        "PAGER_BASE_LINK_ENABLE" => "N",
+                        "PAGER_DESC_NUMBERING" => "N",
+                        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                        "SET_STATUS_404" => "N",
+                        "SET_TITLE" => "N",
+                        "SHOW_404" => "N",
+                        "SORT_BY1" => "SORT",
+                        "SORT_BY2" => "ID",
+                        "SORT_ORDER1" => "ASC",
+                        "SORT_ORDER2" => "ASC",
+                        "STRICT_SECTION_CHECK" => "N"
+                    )
+                ); ?>
             </div>
             <div class="about__help">
                 <div class="a-help">
@@ -205,8 +209,10 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                         <div class="a-help__text-text">
                             <p>
                                 Наша компания уже более 20 лет присутствует на российском рынке как крупный
-                                производитель мебели из металла, стекла и дерева. В рамках освоения новых горизонтов в
-                                200_ году было запущено производство душевых ограждений, мебели и аксессуаров для ванной
+                                производитель мебели из металла, стекла и дерева. В рамках освоения новых горизонтов
+                                в
+                                200_ году было запущено производство душевых ограждений, мебели и аксессуаров для
+                                ванной
                                 комнаты, которое преобразовалось в молодой и перспективный бренд Ulitka.
                             </p>
                         </div>
