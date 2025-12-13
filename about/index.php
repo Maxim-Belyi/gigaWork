@@ -66,67 +66,54 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                 </div>
             </div>
             <div class="about__gallery">
-         
+
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:news.list",
+                    "about_gallery",
+                    array(
+                        "IBLOCK_ID" => "7",
+                        "NEWS_COUNT" => "4",
+                        "SORT_BY1" => "SORT",
+                        "SORT_ORDER1" => "DESC",
+                        "SORT_BY2" => "ID",
+                        "SORT_ORDER2" => "ASC",
+                        "CACHE_TYPE" => "A",
+                        "CACHE_TIME" => "36000000",
+                        "CACHE_GROUPS" => "Y",
+                        "SET_TITLE" => "N",
+                        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                        "ADD_SECTIONS_CHAIN" => "N",
+                        "AJAX_MODE" => "N"
+                    )
+                ); ?>
+            </div>
+
+            <div class="about__stats">
+                <div class="a-stats">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
-                        "about_gallery",
+                        "about_stats",
                         array(
-                            "IBLOCK_ID" => "7",           
-                            "NEWS_COUNT" => "4",          
-                            "SORT_BY1" => "SORT",        
-                            "SORT_ORDER1" => "DESC",       
+                            "IBLOCK_ID" => "8",
+                            "SORT_BY1" => "SORT",
+                            "SORT_ORDER1" => "DESC",
                             "SORT_BY2" => "ID",
                             "SORT_ORDER2" => "ASC",
-                            "CACHE_TYPE" => "A",        
-                            "CACHE_TIME" => "36000000",   
+                            "CACHE_TYPE" => "A",
+                            "CACHE_TIME" => "36000000",
                             "CACHE_GROUPS" => "Y",
-                            "SET_TITLE" => "N",           
-                            "INCLUDE_IBLOCK_INTO_CHAIN" => "N", 
+                            "SET_TITLE" => "N",
+                            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                             "ADD_SECTIONS_CHAIN" => "N",
                             "AJAX_MODE" => "N"
                         )
                     ); ?>
-            </div>
-            
-            <div class="about__stats">
-                <div class="a-stats">
-                    <div class="a-stats__item">
-                        <div class="a-stats__item-title">
-                            2005
-                        </div>
-                        <div class="a-stats__item-value">
-                            год основания компании
-                        </div>
-                    </div>
-                    <div class="a-stats__item">
-                        <div class="a-stats__item-title">
-                            &gt;1000
-                        </div>
-                        <div class="a-stats__item-value">
-                            клиентов по всей России
-                        </div>
-                    </div>
-                    <div class="a-stats__item">
-                        <div class="a-stats__item-title">
-                            2593м2
-                        </div>
-                        <div class="a-stats__item-value">
-                            площадь производства
-                        </div>
-                    </div>
-                    <div class="a-stats__item">
-                        <div class="a-stats__item-title">
-                            100ед/день
-                        </div>
-                        <div class="a-stats__item-value">
-                            производственная мощность
-                        </div>
-                    </div>
                 </div>
+
             </div>
             <div class="about__video" data-video="">
                 <div class="about__video-img">
-                    <img src="./img/about/video.jpg" alt="" loading="lazy">
+                    <img src="asset/img/about/video.jpg" alt="" loading="lazy">
                 </div>
                 <div class="about__video-item">
                     <iframe src="https://www.youtube.com/embed/KPXmZ6bLo5w"
