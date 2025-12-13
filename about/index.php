@@ -109,68 +109,54 @@ $APPLICATION->SetPageProperty("inner", "О компании");
                         )
                     ); ?>
                 </div>
+            </div>
 
-            </div>
-            <div class="about__video" data-video="">
-                <div class="about__video-img">
-                    <img src="asset/img/about/video.jpg" alt="" loading="lazy">
-                </div>
-                <div class="about__video-item">
-                    <iframe src="https://www.youtube.com/embed/KPXmZ6bLo5w"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
+            <? $APPLICATION->IncludeComponent(
+                "bitrix:news.list",
+                "about_video",
+                array(
+                    "IBLOCK_ID" => "9",
+                    "NEWS_COUNT" => "1",
+                    "PROPERTY_CODE" => array("VIDEO_LINK"),
+                    "FIELD_CODE" => array("PREVIEW_PICTURE"),
+                    "SET_TITLE" => "N",
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                    "ADD_SECTIONS_CHAIN" => "N",
+                    "AJAX_MODE" => "N"
+                )
+            ); ?>
+
+
+
+
             <div class="about__direction">
                 <div class="about__direction-title">
                     4 направления нашей работы
                 </div>
+
+
                 <div class="a-direction">
-                    <a class="a-direction__item" href="#">
-                        <div class="a-direction__item-img">
-                            <img src="./img/about/direction-1.jpg" alt="" loading="lazy">
-                        </div>
-                        <div class="a-direction__item-title">
-                            Душевые ограждения
-                        </div>
-                        <div class="a-direction__item-description">
-                            Наша компания уже более 20 лет присутствует на российском рынке как крупный производитель
-                            мебели из металла, стекла и дерева.
-                        </div>
-                    </a><a class="a-direction__item" href="#">
-                        <div class="a-direction__item-img">
-                            <img src="./img/about/direction-2.jpg" alt="" loading="lazy">
-                        </div>
-                        <div class="a-direction__item-title">
-                            Поддоны
-                        </div>
-                        <div class="a-direction__item-description">
-                            Наша компания уже более 20 лет присутствует на российском рынке как крупный производитель
-                            мебели из металла, стекла и дерева.
-                        </div>
-                    </a><a class="a-direction__item" href="#">
-                        <div class="a-direction__item-img">
-                            <img src="./img/about/direction-3.jpg" alt="" loading="lazy">
-                        </div>
-                        <div class="a-direction__item-title">
-                            Мебель
-                        </div>
-                        <div class="a-direction__item-description">
-                            Наша компания уже более 20 лет присутствует на российском рынке как крупный производитель
-                            мебели из металла, стекла и дерева.
-                        </div>
-                    </a><a class="a-direction__item" href="#">
-                        <div class="a-direction__item-img">
-                            <img src="./img/about/direction-4.jpg" alt="" loading="lazy">
-                        </div>
-                        <div class="a-direction__item-title">
-                            Аксессуары
-                        </div>
-                        <div class="a-direction__item-description">
-                            Наша компания уже более 20 лет присутствует на российском рынке как крупный производитель
-                            мебели из металла, стекла и дерева.
-                        </div>
-                    </a>
+
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:news.list",
+                        "about_cards",
+                        array(
+                            "IBLOCK_ID" => "10",
+                            "SORT_BY1" => "SORT",
+                            "SORT_ORDER1" => "DESC",
+                            "SORT_BY2" => "ID",
+                            "SORT_ORDER2" => "ASC",
+                            "CACHE_TYPE" => "A",
+                            "FIELD_CODE" => array("NAME", "PREVIEW_TEXT", "PREVIEW_PICTURE"),
+                            "PROPERTY_CODE" => array("CARD_LINK"),
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_GROUPS" => "Y",
+                            "SET_TITLE" => "N",
+                            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "AJAX_MODE" => "N"
+                        )
+                    ); ?>
                 </div>
             </div>
             <div class="about__slide">
@@ -227,4 +213,5 @@ $APPLICATION->SetPageProperty("inner", "О компании");
             </div>
         </div>
     </div>
-</main>
+
+    <?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
