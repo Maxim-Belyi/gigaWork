@@ -193,28 +193,38 @@ $APPLICATION->SetPageProperty("inner", "О компании");
             <div class="about__help">
                 <div class="a-help">
                     <div class="a-help__title">
-                        Помогаем <br>
-                        в нестандартных <br>
-                        изделиях
+                      
                     </div>
                     <div class="a-help__img">
-                        <img src="./img/about/help.jpg" alt="" loading="lazy">
+                        <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/about/help_img.php"
+                        )
+                    ); ?>
                     </div>
                     <div class="a-help__text">
                         <div class="a-help__text-title">
-                            Помогаем <br>
-                            в нестандартных <br>
-                            изделиях
+                           <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/about/help-title.php"
+                        )
+                    ); ?>
                         </div>
                         <div class="a-help__text-text">
-                            <p>
-                                Наша компания уже более 20 лет присутствует на российском рынке как крупный
-                                производитель мебели из металла, стекла и дерева. В рамках освоения новых горизонтов
-                                в
-                                200_ году было запущено производство душевых ограждений, мебели и аксессуаров для
-                                ванной
-                                комнаты, которое преобразовалось в молодой и перспективный бренд Ulitka.
-                            </p>
+                           <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/about/help-text.php"
+                        )
+                    ); ?>
                         </div>
                     </div>
                 </div>
