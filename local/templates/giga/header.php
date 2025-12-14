@@ -249,3 +249,4 @@ use Bitrix\Main\Page\Asset;
             </div>
         </header>
         <main>
+                   
