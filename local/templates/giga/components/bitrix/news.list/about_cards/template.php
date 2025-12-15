@@ -31,9 +31,7 @@ $this->setFrameMode(true);
                     <?=$arItem["PREVIEW_TEXT"]?>
                 </div>
             <?php endif; ?>
-
         </a>
-
     <?php endforeach; ?>
 
 <?php endif; ?>

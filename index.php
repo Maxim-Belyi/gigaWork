@@ -1,5 +1,4 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("ulitka");
 ?>
 
@@ -14,7 +13,7 @@ $APPLICATION->SetTitle("ulitka");
       </ul>
       <hr/>
       <ul>
-        <li><a href="./articles.html">Статьи</a></li>
+        <li><a href="/articles/template.php">Статьи</a></li>
       </ul>
       <ul>
         <li><a href="./typical.html">Статья</a></li>
