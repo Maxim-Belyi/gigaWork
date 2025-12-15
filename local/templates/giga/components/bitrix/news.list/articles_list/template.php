@@ -3,6 +3,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
 
 $this->setFrameMode(true);
+$articlesLimit = 6; 
 
 $myOrder = [
     'Все',
@@ -21,6 +22,7 @@ foreach ($arResult["ITEMS"] as $arItem) {
     if (is_array($tagName)) {
         $tagName = reset($tagName);
     }
+    $tagName = trim($tagName);
 
     if (!empty($tagName)) {
         $arGroups[$tagName][] = $arItem;
