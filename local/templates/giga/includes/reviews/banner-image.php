@@ -1,0 +1,1 @@
+<img src="<?= SITE_TEMPLATE_PATH?>/assets/img/review/review.jpg" alt="" loading="lazy">

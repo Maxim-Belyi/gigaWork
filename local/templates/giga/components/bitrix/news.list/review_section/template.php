@@ -2,7 +2,6 @@
 	die();
 ?>
 
-
 <div class="review-list">
 	<?php foreach ($arResult["ITEMS"] as $arItem): ?>
 
@@ -20,7 +19,7 @@
 		<div class="review-list__item">
 			<div class="r-review" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 				<div class="r-review__top">
-					<div class="r-review__top-name"><?php echo $arItem["PROPERTIES"]["user_name"]["VALUE"] ?></div>
+					<div class="r-review__top-name"><?php echo $arItem["NAME"] ?></div>
 					<div class="r-review__top-date"><?php echo $arItem["DISPLAY_ACTIVE_FROM"] ?></div>
 				</div>
 
@@ -43,10 +42,7 @@
 
 		</div>
 	<?php endforeach; ?>
-	  <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-        <br />
+	  <?php if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
         <?=$arResult["NAV_STRING"]?>
-    <?endif;?>
-
-	
+    <?php endif;?>
 </div>
