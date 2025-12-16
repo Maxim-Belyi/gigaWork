@@ -1,4 +1,4 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Ulitka");
 $APPLICATION->SetPageProperty("inner", "О компании");
@@ -8,7 +8,8 @@ $APPLICATION->SetPageProperty("inner", "О компании");
         <div class="breadcrumbs">
             <a class="breadcrumbs__item" href="#">Ulitka</a><a class="breadcrumbs__item" href="#">Полезные статьи</a>
         </div>
-        <h1 class="articles__title"><? $APPLICATION->IncludeComponent(
+        <h1 class="articles__title">
+			<? $APPLICATION->IncludeComponent(
                 "bitrix:main.include",
                 "template1",
                 array(
@@ -93,4 +94,4 @@ $APPLICATION->SetPageProperty("inner", "О компании");
 ); ?>
     </div>
 </div>
-<br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

@@ -37,12 +37,13 @@
 						<?= $adminReplyText; ?>
 					</div>
 				</div>
-				
+
 			<?php endif; ?>
 
 		</div>
 	<?php endforeach; ?>
-	  <?php if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
-        <?=$arResult["NAV_STRING"]?>
-    <?php endif;?>
+		<?php if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
+			<?= $arResult["NAV_STRING"] ?>
+		
+	<?php endif; ?>
 </div>

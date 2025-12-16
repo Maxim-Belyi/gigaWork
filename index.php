@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("ulitka");
       </ul>
       <hr/>
       <ul>
-        <li><a href="./collaboration.html">Сотрудничество	</a></li>
+        <li><a href="/collaboration/">Сотрудничество	</a></li>
       </ul>
       <hr/>
       <ul>
