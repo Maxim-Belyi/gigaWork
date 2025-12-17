@@ -55,7 +55,7 @@
         ),
         false
       ); ?>
-        <div class="footer__schedule"><? $APPLICATION->IncludeComponent(
+        <div class="footer__schedule"><?php $APPLICATION->IncludeComponent(
           "bitrix:main.include",
           "template1",
           array(
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="footer__social mobile"><?php $APPLICATION->IncludeComponent(
+      <a class="footer__social mobile"><?php $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "template1",
         array(
@@ -85,7 +85,7 @@
         ),
         false
       ); ?></a>
-      </div>
+      </d>
       <div class="footer__text"><?php $APPLICATION->IncludeComponent(
         "bitrix:main.include",
         "template1",
