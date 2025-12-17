@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217173050 extends Version
+class Version20251217181645 extends Version
 {
     protected $author = "admin";
 
@@ -19,7 +19,7 @@ class Version20251217173050 extends Version
     {
         $helper = $this->getHelperManager();
         $helper->Iblock()->saveIblockType(array (
-  'ID' => 'Content',
+  'ID' => 'Articles',
   'SECTIONS' => 'Y',
   'EDIT_FILE_BEFORE' => '',
   'EDIT_FILE_AFTER' => '',
@@ -29,33 +29,33 @@ class Version20251217173050 extends Version
   array (
     'ru' => 
     array (
-      'NAME' => 'Контент',
+      'NAME' => 'Cтатьи',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
     'en' => 
     array (
-      'NAME' => 'Content',
+      'NAME' => 'Articles',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
   ),
 ));
         $iblockId = $helper->Iblock()->saveIblock(array (
-  'IBLOCK_TYPE_ID' => 'Content',
+  'IBLOCK_TYPE_ID' => 'Articles',
   'LID' => 
   array (
     0 => 's1',
   ),
-  'CODE' => 'Карточки имиджевой',
-  'API_CODE' => NULL,
+  'CODE' => 'article',
+  'API_CODE' => 'article',
   'REST_ON' => 'N',
-  'NAME' => 'Карточки имиджевой',
+  'NAME' => 'Статья',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/Content/detail.php?ID=#ELEMENT_ID#',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/Content/list.php?SECTION_ID=#SECTION_ID#',
+  'LIST_PAGE_URL' => '#SITE_DIR#/Articles/index.php?ID=#IBLOCK_ID#',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/Articles/detail.php?ID=#ELEMENT_ID#',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/Articles/list.php?SECTION_ID=#SECTION_ID#',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -74,8 +74,8 @@ class Version20251217173050 extends Version
   'SECTION_CHOOSER' => 'L',
   'LIST_MODE' => '',
   'RIGHTS_MODE' => 'S',
-  'SECTION_PROPERTY' => 'N',
-  'PROPERTY_INDEX' => 'N',
+  'SECTION_PROPERTY' => 'Y',
+  'PROPERTY_INDEX' => 'I',
   'VERSION' => '1',
   'LAST_CONV_ELEMENT' => '0',
   'SOCNET_GROUP_ID' => NULL,
@@ -147,7 +147,7 @@ class Version20251217173050 extends Version
   'PREVIEW_PICTURE' => 
   array (
     'NAME' => 'Картинка для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
       'FROM_DETAIL' => 'N',
@@ -183,7 +183,7 @@ class Version20251217173050 extends Version
   'PREVIEW_TEXT' => 
   array (
     'NAME' => 'Описание для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => '',
     'VISIBLE' => 'Y',
   ),
@@ -237,11 +237,11 @@ class Version20251217173050 extends Version
   'CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'N',
-      'TRANSLITERATION' => 'N',
+      'UNIQUE' => 'Y',
+      'TRANSLITERATION' => 'Y',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -344,11 +344,11 @@ class Version20251217173050 extends Version
   'SECTION_CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'N',
-      'TRANSLITERATION' => 'N',
+      'UNIQUE' => 'Y',
+      'TRANSLITERATION' => 'Y',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -403,15 +403,163 @@ class Version20251217173050 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
+  'everyone' => 'R',
 ));
-    $helper->UserOptions()->saveElementGrid($iblockId, array (
+        $helper->Iblock()->saveProperty($iblockId, array (
+  'NAME' => 'ARTICLE_TAG',
+  'ACTIVE' => 'Y',
+  'SORT' => '500',
+  'CODE' => 'ARTICLE_TAG',
+  'DEFAULT_VALUE' => '',
+  'PROPERTY_TYPE' => 'L',
+  'ROW_COUNT' => '1',
+  'COL_COUNT' => '30',
+  'LIST_TYPE' => 'C',
+  'MULTIPLE' => 'Y',
+  'XML_ID' => NULL,
+  'FILE_TYPE' => '',
+  'MULTIPLE_CNT' => '5',
+  'LINK_IBLOCK_ID' => '0',
+  'WITH_DESCRIPTION' => 'N',
+  'SEARCHABLE' => 'N',
+  'FILTRABLE' => 'N',
+  'IS_REQUIRED' => 'N',
+  'VERSION' => '1',
+  'USER_TYPE' => NULL,
+  'USER_TYPE_SETTINGS' => 'a:0:{}',
+  'HINT' => '',
+  'VALUES' => 
+  array (
+    0 => 
+    array (
+      'VALUE' => 'Все',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'ALL',
+    ),
+    1 => 
+    array (
+      'VALUE' => 'Душевые ограждения',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'SHOWER_ENCLOSURES',
+    ),
+    2 => 
+    array (
+      'VALUE' => 'Душевые поддоны',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'SHOWER_TRAYS',
+    ),
+    3 => 
+    array (
+      'VALUE' => 'Мебель/Аксессуары',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'FURNITURE',
+    ),
+    4 => 
+    array (
+      'VALUE' => 'Тенденции',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'TRENDS',
+    ),
+    5 => 
+    array (
+      'VALUE' => 'Уход',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'CARE',
+    ),
+  ),
+  'FEATURES' => 
+  array (
+    0 => 
+    array (
+      'MODULE_ID' => 'iblock',
+      'FEATURE_ID' => 'DETAIL_PAGE_SHOW',
+      'IS_ENABLED' => 'Y',
+    ),
+    1 => 
+    array (
+      'MODULE_ID' => 'iblock',
+      'FEATURE_ID' => 'LIST_PAGE_SHOW',
+      'IS_ENABLED' => 'Y',
+    ),
+  ),
+  'SMART_FILTER' => 'N',
+  'DISPLAY_TYPE' => 'F',
+  'DISPLAY_EXPANDED' => 'N',
+  'FILTER_HINT' => '',
+));
+            $helper->Iblock()->saveProperty($iblockId, array (
+  'NAME' => 'IS_BIG',
+  'ACTIVE' => 'Y',
+  'SORT' => '500',
+  'CODE' => 'IS_BIG',
+  'DEFAULT_VALUE' => '',
+  'PROPERTY_TYPE' => 'L',
+  'ROW_COUNT' => '1',
+  'COL_COUNT' => '30',
+  'LIST_TYPE' => 'C',
+  'MULTIPLE' => 'N',
+  'XML_ID' => NULL,
+  'FILE_TYPE' => '',
+  'MULTIPLE_CNT' => '5',
+  'LINK_IBLOCK_ID' => '0',
+  'WITH_DESCRIPTION' => 'N',
+  'SEARCHABLE' => 'N',
+  'FILTRABLE' => 'N',
+  'IS_REQUIRED' => 'N',
+  'VERSION' => '1',
+  'USER_TYPE' => NULL,
+  'USER_TYPE_SETTINGS' => 'a:0:{}',
+  'HINT' => '',
+  'VALUES' => 
+  array (
+    0 => 
+    array (
+      'VALUE' => 'да',
+      'DEF' => 'N',
+      'SORT' => '500',
+      'XML_ID' => 'Y',
+    ),
+  ),
+  'FEATURES' => 
+  array (
+    0 => 
+    array (
+      'MODULE_ID' => 'iblock',
+      'FEATURE_ID' => 'DETAIL_PAGE_SHOW',
+      'IS_ENABLED' => 'N',
+    ),
+    1 => 
+    array (
+      'MODULE_ID' => 'iblock',
+      'FEATURE_ID' => 'LIST_PAGE_SHOW',
+      'IS_ENABLED' => 'N',
+    ),
+  ),
+  'SMART_FILTER' => 'Y',
+  'DISPLAY_TYPE' => 'F',
+  'DISPLAY_EXPANDED' => 'N',
+  'FILTER_HINT' => '',
+));
+        $helper->UserOptions()->saveElementGrid($iblockId, array (
   'views' => 
   array (
     'default' => 
     array (
       'columns' => 
       array (
-        0 => '',
+        0 => 'NAME',
+        1 => 'SORT',
+        2 => 'TIMESTAMP_X',
+        3 => 'DATE_CREATE',
+        4 => 'TAGS',
+        5 => 'ID',
+        6 => 'PROPERTY_ARTICLE_TAG',
       ),
       'columns_sizes' => 
       array (
@@ -426,6 +574,9 @@ class Version20251217173050 extends Version
       'custom_names' => 
       array (
       ),
+      'last_sort_by' => 'created',
+      'last_sort_order' => 'desc',
+      'page_size' => 50,
     ),
   ),
   'filters' => 

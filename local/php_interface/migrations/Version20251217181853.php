@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217172014 extends Version
+class Version20251217181853 extends Version
 {
     protected $author = "admin";
 
@@ -19,7 +19,7 @@ class Version20251217172014 extends Version
     {
         $helper = $this->getHelperManager();
         $helper->Iblock()->saveIblockType(array (
-  'ID' => 'Review',
+  'ID' => 'Content',
   'SECTIONS' => 'Y',
   'EDIT_FILE_BEFORE' => '',
   'EDIT_FILE_AFTER' => '',
@@ -29,33 +29,33 @@ class Version20251217172014 extends Version
   array (
     'ru' => 
     array (
-      'NAME' => 'Отзывы',
+      'NAME' => 'Контент',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
     'en' => 
     array (
-      'NAME' => 'Review',
+      'NAME' => 'Content',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
   ),
 ));
         $iblockId = $helper->Iblock()->saveIblock(array (
-  'IBLOCK_TYPE_ID' => 'Review',
+  'IBLOCK_TYPE_ID' => 'Content',
   'LID' => 
   array (
     0 => 's1',
   ),
-  'CODE' => 'review_item',
-  'API_CODE' => 'rewievItem',
+  'CODE' => 'Видео',
+  'API_CODE' => 'Video',
   'REST_ON' => 'N',
-  'NAME' => 'Отзывы',
+  'NAME' => 'Видео',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'LIST_PAGE_URL' => '#SITE_DIR#/Review/index.php?ID=#IBLOCK_ID#',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/Review/detail.php?ID=#ELEMENT_ID#',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/Review/list.php?SECTION_ID=#SECTION_ID#',
+  'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/Content/detail.php?ID=#ELEMENT_ID#',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/Content/list.php?SECTION_ID=#SECTION_ID#',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -237,7 +237,7 @@ class Version20251217172014 extends Version
   'CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
       'UNIQUE' => 'Y',
@@ -403,13 +403,13 @@ class Version20251217172014 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
-  'everyone' => 'W',
+  'everyone' => 'R',
 ));
         $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'Ответ Администратора',
+  'NAME' => 'VIDEO_LINK',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'CODE' => 'admin_reply',
+  'CODE' => 'VIDEO_LINK',
   'DEFAULT_VALUE' => '',
   'PROPERTY_TYPE' => 'S',
   'ROW_COUNT' => '1',

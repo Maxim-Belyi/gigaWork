@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217173112 extends Version
+class Version20251217181408 extends Version
 {
     protected $author = "admin";
 
@@ -19,7 +19,7 @@ class Version20251217173112 extends Version
     {
         $helper = $this->getHelperManager();
         $helper->Iblock()->saveIblockType(array (
-  'ID' => 'Content',
+  'ID' => 'collaboration',
   'SECTIONS' => 'Y',
   'EDIT_FILE_BEFORE' => '',
   'EDIT_FILE_AFTER' => '',
@@ -29,33 +29,33 @@ class Version20251217173112 extends Version
   array (
     'ru' => 
     array (
-      'NAME' => 'Контент',
+      'NAME' => 'Сотрудничество',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
     'en' => 
     array (
-      'NAME' => 'Content',
+      'NAME' => 'Collaboration',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
   ),
 ));
         $iblockId = $helper->Iblock()->saveIblock(array (
-  'IBLOCK_TYPE_ID' => 'Content',
+  'IBLOCK_TYPE_ID' => 'collaboration',
   'LID' => 
   array (
     0 => 's1',
   ),
-  'CODE' => 'Карточка продукта',
+  'CODE' => 'Сотрудничество',
   'API_CODE' => NULL,
   'REST_ON' => 'N',
-  'NAME' => 'Карточка продукта',
+  'NAME' => 'collaboration_form',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/Content/detail.php?ID=#ELEMENT_ID#',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/Content/list.php?SECTION_ID=#SECTION_ID#',
+  'LIST_PAGE_URL' => '#SITE_DIR#/collaboration/index.php?ID=#IBLOCK_ID#',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/collaboration/detail.php?ID=#ELEMENT_ID#',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/collaboration/list.php?SECTION_ID=#SECTION_ID#',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -147,7 +147,7 @@ class Version20251217173112 extends Version
   'PREVIEW_PICTURE' => 
   array (
     'NAME' => 'Картинка для анонса',
-    'IS_REQUIRED' => 'Y',
+    'IS_REQUIRED' => 'N',
     'DEFAULT_VALUE' => 
     array (
       'FROM_DETAIL' => 'N',
@@ -344,11 +344,11 @@ class Version20251217173112 extends Version
   'SECTION_CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'Y',
+    'IS_REQUIRED' => 'N',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'Y',
-      'TRANSLITERATION' => 'Y',
+      'UNIQUE' => 'N',
+      'TRANSLITERATION' => 'N',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -403,13 +403,61 @@ class Version20251217173112 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
-  'everyone' => 'R',
+  'everyone' => 'W',
 ));
         $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'CARD_LINK',
+  'NAME' => 'PHONE',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'CODE' => 'CARD_LINK',
+  'CODE' => 'PHONE_NUMBER',
+  'DEFAULT_VALUE' => '',
+  'PROPERTY_TYPE' => 'S',
+  'ROW_COUNT' => '1',
+  'COL_COUNT' => '30',
+  'LIST_TYPE' => 'L',
+  'MULTIPLE' => 'N',
+  'XML_ID' => NULL,
+  'FILE_TYPE' => '',
+  'MULTIPLE_CNT' => '5',
+  'LINK_IBLOCK_ID' => '0',
+  'WITH_DESCRIPTION' => 'N',
+  'SEARCHABLE' => 'N',
+  'FILTRABLE' => 'N',
+  'IS_REQUIRED' => 'N',
+  'VERSION' => '1',
+  'USER_TYPE' => NULL,
+  'USER_TYPE_SETTINGS' => 'a:0:{}',
+  'HINT' => '',
+));
+            $helper->Iblock()->saveProperty($iblockId, array (
+  'NAME' => 'EMAIL',
+  'ACTIVE' => 'Y',
+  'SORT' => '500',
+  'CODE' => 'EMAIL',
+  'DEFAULT_VALUE' => '',
+  'PROPERTY_TYPE' => 'S',
+  'ROW_COUNT' => '1',
+  'COL_COUNT' => '30',
+  'LIST_TYPE' => 'L',
+  'MULTIPLE' => 'N',
+  'XML_ID' => NULL,
+  'FILE_TYPE' => '',
+  'MULTIPLE_CNT' => '5',
+  'LINK_IBLOCK_ID' => '0',
+  'WITH_DESCRIPTION' => 'N',
+  'SEARCHABLE' => 'N',
+  'FILTRABLE' => 'N',
+  'IS_REQUIRED' => 'N',
+  'VERSION' => '1',
+  'USER_TYPE' => NULL,
+  'USER_TYPE_SETTINGS' => 'a:0:{}',
+  'HINT' => '',
+));
+            $helper->Iblock()->saveProperty($iblockId, array (
+  'NAME' => 'COMPANY_NAME',
+  'ACTIVE' => 'Y',
+  'SORT' => '500',
+  'CODE' => 'COMPANY_NAME',
   'DEFAULT_VALUE' => '',
   'PROPERTY_TYPE' => 'S',
   'ROW_COUNT' => '1',

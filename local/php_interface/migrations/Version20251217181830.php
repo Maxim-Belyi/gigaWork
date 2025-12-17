@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217173123 extends Version
+class Version20251217181830 extends Version
 {
     protected $author = "admin";
 
@@ -47,10 +47,10 @@ class Version20251217173123 extends Version
   array (
     0 => 's1',
   ),
-  'CODE' => 'Видео',
-  'API_CODE' => NULL,
+  'CODE' => 'Слайдер в хедере',
+  'API_CODE' => 'SliderOnMain',
   'REST_ON' => 'N',
-  'NAME' => 'Видео',
+  'NAME' => 'Слайдер в хедере',
   'ACTIVE' => 'Y',
   'SORT' => '500',
   'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
@@ -147,7 +147,7 @@ class Version20251217173123 extends Version
   'PREVIEW_PICTURE' => 
   array (
     'NAME' => 'Картинка для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
       'FROM_DETAIL' => 'N',
@@ -183,7 +183,7 @@ class Version20251217173123 extends Version
   'PREVIEW_TEXT' => 
   array (
     'NAME' => 'Описание для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => '',
     'VISIBLE' => 'Y',
   ),
@@ -405,31 +405,7 @@ class Version20251217173123 extends Version
   'administrators' => 'X',
   'everyone' => 'R',
 ));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'VIDEO_LINK',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'VIDEO_LINK',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => 'a:0:{}',
-  'HINT' => '',
-));
-        $helper->UserOptions()->saveElementGrid($iblockId, array (
+    $helper->UserOptions()->saveElementGrid($iblockId, array (
   'views' => 
   array (
     'default' => 

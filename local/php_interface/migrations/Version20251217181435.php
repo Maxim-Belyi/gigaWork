@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217172514 extends Version
+class Version20251217181435 extends Version
 {
     protected $author = "admin";
 
@@ -48,7 +48,7 @@ class Version20251217172514 extends Version
     0 => 's1',
   ),
   'CODE' => 'Сотрудничество',
-  'API_CODE' => NULL,
+  'API_CODE' => 'collaborationForm',
   'REST_ON' => 'N',
   'NAME' => 'collaboration_form',
   'ACTIVE' => 'Y',

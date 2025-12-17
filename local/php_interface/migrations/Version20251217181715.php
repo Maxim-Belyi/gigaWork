@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217171632 extends Version
+class Version20251217181715 extends Version
 {
     protected $author = "admin";
 
@@ -47,8 +47,8 @@ class Version20251217171632 extends Version
   array (
     0 => 's1',
   ),
-  'CODE' => 'main page slider',
-  'API_CODE' => 'mainPageSlider',
+  'CODE' => 'Слайдер на главной',
+  'API_CODE' => 'SliderOnMain',
   'REST_ON' => 'N',
   'NAME' => 'Слайдер на главной',
   'ACTIVE' => 'Y',
@@ -183,7 +183,7 @@ class Version20251217171632 extends Version
   'PREVIEW_TEXT' => 
   array (
     'NAME' => 'Описание для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => '',
     'VISIBLE' => 'Y',
   ),
@@ -403,6 +403,7 @@ class Version20251217171632 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
+  'everyone' => 'R',
 ));
     $helper->UserOptions()->saveElementGrid($iblockId, array (
   'views' => 
