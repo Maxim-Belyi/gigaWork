@@ -32,7 +32,7 @@ $APPLICATION->SetTitle("ulitka");
       </ul>
       <hr/>
       <ul>
-        <li><a href="./image.html">Имиджевая</a></li>
+        <li><a href="/image/">Имиджевая</a></li>
       </ul>
       <hr/>
       <ul>

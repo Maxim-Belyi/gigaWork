@@ -116,7 +116,7 @@ $APPLICATION->AddChainItem("Отзывы", "");
           "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
           "PAGER_SHOW_ALL" => "N",
           "PAGER_SHOW_ALWAYS" => "N",
-          "PAGER_TEMPLATE" => "round",
+          "PAGER_TEMPLATE" => "grid",
           "PAGER_TITLE" => "Отзывы",
           "PARENT_SECTION" => "",
           "PARENT_SECTION_CODE" => "",
