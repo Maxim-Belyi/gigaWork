@@ -47,14 +47,14 @@
       ); ?>
       </div>
       <div class="footer__info"><? $APPLICATION->IncludeComponent(
-         "bitrix:main.include",
-         "template1",
-         array(
-           "AREA_FILE_SHOW" => "file",
-           "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
-         ),
-         false
-       ); ?>
+        "bitrix:main.include",
+        "template1",
+        array(
+          "AREA_FILE_SHOW" => "file",
+          "PATH" => SITE_TEMPLATE_PATH . "/includes/footer/footer_phone.php",
+        ),
+        false
+      ); ?>
         <div class="footer__schedule"><? $APPLICATION->IncludeComponent(
           "bitrix:main.include",
           "template1",
@@ -120,6 +120,7 @@
   </div>
 </footer>
 </div>
+
 </body>
 <div class="cookie">
   <div class="wrapper">
@@ -345,6 +346,7 @@
       <div class="popup-info__description">Некоторые поля не заполнены или заполнены не верно</div>
     </div>
   </div>
+</div>
 </div>
 
 </html>

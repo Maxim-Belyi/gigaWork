@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    </div>
+    
 
     <div class="about__slider-img">
         <div class="swiper">
