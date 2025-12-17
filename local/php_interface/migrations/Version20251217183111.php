@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217181900 extends Version
+class Version20251217183111 extends Version
 {
     protected $author = "admin";
 
@@ -47,10 +47,10 @@ class Version20251217181900 extends Version
   array (
     0 => 's1',
   ),
-  'CODE' => 'Карточка продукта',
-  'API_CODE' => 'productCard',
+  'CODE' => 'Видео',
+  'API_CODE' => 'Video',
   'REST_ON' => 'N',
-  'NAME' => 'Карточка продукта',
+  'NAME' => 'Видео',
   'ACTIVE' => 'Y',
   'SORT' => '500',
   'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
@@ -147,7 +147,7 @@ class Version20251217181900 extends Version
   'PREVIEW_PICTURE' => 
   array (
     'NAME' => 'Картинка для анонса',
-    'IS_REQUIRED' => 'Y',
+    'IS_REQUIRED' => 'N',
     'DEFAULT_VALUE' => 
     array (
       'FROM_DETAIL' => 'N',
@@ -237,11 +237,11 @@ class Version20251217181900 extends Version
   'CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'N',
-      'TRANSLITERATION' => 'N',
+      'UNIQUE' => 'Y',
+      'TRANSLITERATION' => 'Y',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -344,11 +344,11 @@ class Version20251217181900 extends Version
   'SECTION_CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'Y',
+    'IS_REQUIRED' => 'N',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'Y',
-      'TRANSLITERATION' => 'Y',
+      'UNIQUE' => 'N',
+      'TRANSLITERATION' => 'N',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -406,10 +406,10 @@ class Version20251217181900 extends Version
   'everyone' => 'R',
 ));
         $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'CARD_LINK',
+  'NAME' => 'VIDEO_LINK',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'CODE' => 'CARD_LINK',
+  'CODE' => 'VIDEO_LINK',
   'DEFAULT_VALUE' => '',
   'PROPERTY_TYPE' => 'S',
   'ROW_COUNT' => '1',

@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217181907 extends Version
+class Version20251217183135 extends Version
 {
     protected $author = "admin";
 

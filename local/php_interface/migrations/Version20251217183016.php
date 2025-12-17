@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217181435 extends Version
+class Version20251217183016 extends Version
 {
     protected $author = "admin";
 
@@ -19,7 +19,7 @@ class Version20251217181435 extends Version
     {
         $helper = $this->getHelperManager();
         $helper->Iblock()->saveIblockType(array (
-  'ID' => 'collaboration',
+  'ID' => 'Content',
   'SECTIONS' => 'Y',
   'EDIT_FILE_BEFORE' => '',
   'EDIT_FILE_AFTER' => '',
@@ -29,33 +29,33 @@ class Version20251217181435 extends Version
   array (
     'ru' => 
     array (
-      'NAME' => 'Сотрудничество',
+      'NAME' => 'Контент',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
     'en' => 
     array (
-      'NAME' => 'Collaboration',
+      'NAME' => 'Content',
       'SECTION_NAME' => '',
       'ELEMENT_NAME' => '',
     ),
   ),
 ));
         $iblockId = $helper->Iblock()->saveIblock(array (
-  'IBLOCK_TYPE_ID' => 'collaboration',
+  'IBLOCK_TYPE_ID' => 'Content',
   'LID' => 
   array (
     0 => 's1',
   ),
-  'CODE' => 'Сотрудничество',
-  'API_CODE' => 'collaborationForm',
+  'CODE' => 'Слайдер в хедере',
+  'API_CODE' => 'SliderOnMain',
   'REST_ON' => 'N',
-  'NAME' => 'collaboration_form',
+  'NAME' => 'Слайдер в хедере',
   'ACTIVE' => 'Y',
   'SORT' => '500',
-  'LIST_PAGE_URL' => '#SITE_DIR#/collaboration/index.php?ID=#IBLOCK_ID#',
-  'DETAIL_PAGE_URL' => '#SITE_DIR#/collaboration/detail.php?ID=#ELEMENT_ID#',
-  'SECTION_PAGE_URL' => '#SITE_DIR#/collaboration/list.php?SECTION_ID=#SECTION_ID#',
+  'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
+  'DETAIL_PAGE_URL' => '#SITE_DIR#/Content/detail.php?ID=#ELEMENT_ID#',
+  'SECTION_PAGE_URL' => '#SITE_DIR#/Content/list.php?SECTION_ID=#SECTION_ID#',
   'CANONICAL_PAGE_URL' => '',
   'PICTURE' => NULL,
   'DESCRIPTION' => '',
@@ -147,7 +147,7 @@ class Version20251217181435 extends Version
   'PREVIEW_PICTURE' => 
   array (
     'NAME' => 'Картинка для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
       'FROM_DETAIL' => 'N',
@@ -183,7 +183,7 @@ class Version20251217181435 extends Version
   'PREVIEW_TEXT' => 
   array (
     'NAME' => 'Описание для анонса',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => '',
     'VISIBLE' => 'Y',
   ),
@@ -237,11 +237,11 @@ class Version20251217181435 extends Version
   'CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'N',
+    'IS_REQUIRED' => 'Y',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'N',
-      'TRANSLITERATION' => 'N',
+      'UNIQUE' => 'Y',
+      'TRANSLITERATION' => 'Y',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -403,81 +403,9 @@ class Version20251217181435 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
-  'everyone' => 'W',
+  'everyone' => 'R',
 ));
-        $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'PHONE',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'PHONE_NUMBER',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => 'a:0:{}',
-  'HINT' => '',
-));
-            $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'EMAIL',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'EMAIL',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => 'a:0:{}',
-  'HINT' => '',
-));
-            $helper->Iblock()->saveProperty($iblockId, array (
-  'NAME' => 'COMPANY_NAME',
-  'ACTIVE' => 'Y',
-  'SORT' => '500',
-  'CODE' => 'COMPANY_NAME',
-  'DEFAULT_VALUE' => '',
-  'PROPERTY_TYPE' => 'S',
-  'ROW_COUNT' => '1',
-  'COL_COUNT' => '30',
-  'LIST_TYPE' => 'L',
-  'MULTIPLE' => 'N',
-  'XML_ID' => NULL,
-  'FILE_TYPE' => '',
-  'MULTIPLE_CNT' => '5',
-  'LINK_IBLOCK_ID' => '0',
-  'WITH_DESCRIPTION' => 'N',
-  'SEARCHABLE' => 'N',
-  'FILTRABLE' => 'N',
-  'IS_REQUIRED' => 'N',
-  'VERSION' => '1',
-  'USER_TYPE' => NULL,
-  'USER_TYPE_SETTINGS' => 'a:0:{}',
-  'HINT' => '',
-));
-        $helper->UserOptions()->saveElementGrid($iblockId, array (
+    $helper->UserOptions()->saveElementGrid($iblockId, array (
   'views' => 
   array (
     'default' => 
