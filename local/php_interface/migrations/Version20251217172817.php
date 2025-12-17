@@ -48,7 +48,7 @@ class Version20251217172817 extends Version
     0 => 's1',
   ),
   'CODE' => 'Слайдер о нас',
-  'API_CODE' => 'aboutUs',
+  'API_CODE' => 'aboutSlider',
   'REST_ON' => 'N',
   'NAME' => 'Слайдер о нас',
   'ACTIVE' => 'Y',
