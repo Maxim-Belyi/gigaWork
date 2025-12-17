@@ -1,5 +1,5 @@
 </main>
-<footer class="footer">
+  <footer class="footer">
   <div class="wrapper">
     <div class="footer__top">
       <? $APPLICATION->IncludeComponent(
@@ -118,9 +118,8 @@
       <a class="footer__developers" href="https://www.xpage.ru/" target="blank"></a>
     </div>
   </div>
-</footer>
+  </footer>
 </div>
-
 </body>
 <div class="cookie">
   <div class="wrapper">
@@ -347,6 +346,6 @@
     </div>
   </div>
 </div>
-</div>
+
 
 </html>
