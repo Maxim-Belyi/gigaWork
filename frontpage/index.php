@@ -138,5 +138,4 @@ $APPLICATION->SetTitle("Ulitka");
         </div>
     </section>
 </div>
-<?php
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php");
+<?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
