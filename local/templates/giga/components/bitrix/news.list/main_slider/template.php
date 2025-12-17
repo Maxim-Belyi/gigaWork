@@ -43,6 +43,5 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
-
 <?php endif; ?>
 

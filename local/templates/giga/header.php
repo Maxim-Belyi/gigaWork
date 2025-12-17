@@ -1,5 +1,4 @@
 <?php
-
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
@@ -135,11 +134,23 @@ use Bitrix\Main\Page\Asset;
                     <div class="header__mobilemenu">
                         <div class="mobilemenu">
                             <div class="wrapper">
-                                <div class="header__nav"><a class="header__nav-item" href="#">О компании</a><a
-                                        class="header__nav-item" href="#">Контакты</a><a class="header__nav-item"
-                                        href="#">Отзывы</a><a class="header__nav-item" href="#">Сотрудничество</a><a
-                                        class="header__nav-item" href="#">Гарантия и сервис</a><a
-                                        class="header__nav-item" href="#">Полезные статьи</a>
+                                <div class="header__nav">
+                                    <?php $APPLICATION->IncludeComponent(
+                                        "bitrix:menu",
+                                        "header_top-menu",
+                                        array(
+                                            "ROOT_MENU_TYPE" => "top",
+                                            "MAX_LEVEL" => "1",
+                                            "CHILD_MENU_TYPE" => "top",
+                                            "USE_EXT" => "N",
+                                            "DELAY" => "N",
+                                            "ALLOW_MULTI_SELECT" => "N",
+                                            "MENU_CACHE_TYPE" => "A",
+                                            "MENU_CACHE_TIME" => "3600",
+                                            "MENU_CACHE_USE_GROUPS" => "Y",
+                                            "MENU_CACHE_GET_VARS" => ""
+                                        )
+                                    ); ?>
                                 </div>
                                 <div class="header__info"><? $APPLICATION->IncludeComponent(
                                     "bitrix:main.include",
@@ -177,4 +188,3 @@ use Bitrix\Main\Page\Asset;
             </div>
         </header>
         <main>
-           

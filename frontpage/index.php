@@ -134,7 +134,7 @@ $APPLICATION->SetTitle("Ulitka");
                         "STRICT_SECTION_CHECK" => "N"
                     )
                 ); ?>
-            </div>
+           
         </div>
     </section>
 </div>
