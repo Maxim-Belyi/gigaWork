@@ -9,7 +9,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
 
-	<a class="cl-item" href="<?= $arItem["DETAIL_PAGE_URL"] ?>" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+	<a class="cl-item" href="#" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 
 		<?php if (!empty($arItem["PREVIEW_PICTURE"]["SRC"])): ?>
 			<div class="cl-item__icon">
