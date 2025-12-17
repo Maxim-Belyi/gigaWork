@@ -1,10 +1,24 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Ulitka");
-$APPLICATION->SetPageProperty("inner", "типовая");
-
+$APPLICATION->SetTitle("Типовая");
+$APPLICATION->AddChainItem("Типовая страница", ""); 
 ?>
 
+  <div class="typical">
+          <div class="wrapper">
+            <div class="page-top">
+               <?php if ($APPLICATION->GetCurPage(false) !== '/'): ?>
+                <div class="breadcrumbs">
+                    <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", ".default", array(
+                        "START_FROM" => "0",
+                        "PATH" => "",
+                        "SITE_ID" => SITE_ID
+                    )); ?>
+                </div>
+            <?php endif; ?>
+
+              <h1 class="page-top__title">Мы должны поучиться у улитки: она придумала себе дом который элегантен, но в то же время функционален</h1>
+            </div>
 <? $APPLICATION->IncludeComponent(
     "bitrix:news.detail",
     "news.detail",
@@ -17,7 +31,7 @@ $APPLICATION->SetPageProperty("inner", "типовая");
         "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
         "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
         "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-        "BROWSER_TITLE" => "-",	// Установить заголовок окна браузера из свойства
+        "BROWSER_TITLE" => "N",	// Установить заголовок окна браузера из свойства
         "CACHE_GROUPS" => "Y",	// Учитывать права доступа
         "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
         "CACHE_TYPE" => "A",	// Тип кеширования
@@ -43,7 +57,7 @@ $APPLICATION->SetPageProperty("inner", "типовая");
         "IBLOCK_URL" => "",	// URL страницы просмотра списка элементов (по умолчанию - из настроек инфоблока)
         "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
         "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
-        "META_DESCRIPTION" => "-",	// Установить описание страницы из свойства
+        "META_DESCRIPTION" => "N",	// Установить описание страницы из свойства
         "META_KEYWORDS" => "-",	// Установить ключевые слова страницы из свойства
         "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
         "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
@@ -61,7 +75,7 @@ $APPLICATION->SetPageProperty("inner", "типовая");
         "SET_META_DESCRIPTION" => "Y",	// Устанавливать описание страницы
         "SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
         "SET_STATUS_404" => "N",	// Устанавливать статус 404
-        "SET_TITLE" => "Y",	// Устанавливать заголовок страницы
+        "SET_TITLE" => "N",	// Устанавливать заголовок страницы
         "SHOW_404" => "N",	// Показ специальной страницы
         "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа элемента
         "USE_PERMISSIONS" => "N",	// Использовать дополнительное ограничение доступа
@@ -70,4 +84,6 @@ $APPLICATION->SetPageProperty("inner", "типовая");
     ),
     false
 ); ?>
+</div>  
+</div>  
 <?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

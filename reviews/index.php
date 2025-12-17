@@ -1,14 +1,20 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Ulitka");
-$APPLICATION->SetPageProperty("inner", "Отзывы");
-
+$APPLICATION->SetTitle("Отзывы");
+$APPLICATION->AddChainItem("Отзывы", "");
 ?>
+
 <div class="reviews">
   <div class="wrapper">
-    <div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Ulitka</a><a class="breadcrumbs__item"
-        href="#">Отзывы</a>
-    </div>
+    <?php if ($APPLICATION->GetCurPage(false) !== '/'): ?>
+      <div class="breadcrumbs">
+        <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", ".default", array(
+          "START_FROM" => "0",
+          "PATH" => "",
+          "SITE_ID" => SITE_ID
+        )); ?>
+      </div>
+    <?php endif; ?>
     <div class="reviews__top">
       <h1 class="reviews__top-title">Отзывы</h1>
       <div class="reviews__top-btn btn btn--low" data-popup="#review">Оставить отзыв</div>

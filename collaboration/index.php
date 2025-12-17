@@ -1,14 +1,20 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Ulitka");
-$APPLICATION->SetPageProperty("inner", "О компании");
+$APPLICATION->SetTitle("Сотрудничество");
+$APPLICATION->AddChainItem("Душевые ограждения", ""); 
 ?>
 <div class="collaboration">
     <div class="wrapper">
         <div class="page-top">
-            <div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Ulitka</a><a class="breadcrumbs__item"
-                    href="#">Душевые ограждения</a>
-            </div>
+             <?php if ($APPLICATION->GetCurPage(false) !== '/'): ?>
+                <div class="breadcrumbs">
+                    <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", ".default", array(
+                        "START_FROM" => "0",
+                        "PATH" => "",
+                        "SITE_ID" => SITE_ID
+                    )); ?>
+                </div>
+            <?php endif; ?>
             <h1 class="page-top__title">
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:main.include",

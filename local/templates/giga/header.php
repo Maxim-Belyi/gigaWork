@@ -16,10 +16,8 @@ use Bitrix\Main\Page\Asset;
 
     <?php
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/main.css');
-
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/main.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/vendors.js');
-
     ?>
 
     <link rel="apple-touch-icon" sizes="180x180"
@@ -43,14 +41,14 @@ use Bitrix\Main\Page\Asset;
             <div class="wrapper header--desktop">
                 <div class="header__top">
                     <? $APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "template1",
-                    array(
-                        "AREA_FILE_SHOW" => "file",
-                        "PATH" => SITE_TEMPLATE_PATH . "/includes/logo.php",
-                    ),
-                    false
-                ); ?>
+                        "bitrix:main.include",
+                        "template1",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/logo.php",
+                        ),
+                        false
+                    ); ?>
                     <div class="header__info"><? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "template1",
@@ -174,9 +172,9 @@ use Bitrix\Main\Page\Asset;
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </header>
         <main>
-                   
+           

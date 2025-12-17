@@ -13,10 +13,10 @@ $APPLICATION->SetTitle("ulitka");
       </ul>
       <hr/>
       <ul>
-        <li><a href="/articles/template.php">Статьи</a></li>
+        <li><a href="/articles/">Статьи</a></li>
       </ul>
       <ul>
-        <li><a href="./typical.html">Статья</a></li>
+        <li><a href="/typical/">Статья</a></li>
       </ul>
       <hr/>
       <ul>
