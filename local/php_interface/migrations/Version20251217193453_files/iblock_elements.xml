@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items iblockUid="Content:Слайдер в хедере" exchangeVersion="2" >
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Слайд1</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="banner.jpg" type="file">iblock/4a8/gx3oo10swtpe0erkaq2i9660myphehst.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value><![CDATA[Уют <br> может быть стильным]]></value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>html</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>slayd1</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>33</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Слайд2</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="banner.jpg" type="file">iblock/70b/1wn598e1p26t0b54wtw2r59h3k4thn5h.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value><![CDATA[Уют <br> может быть уютным 1]]></value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>html</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>slayd2</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>34</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Слайд3</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="banner.jpg" type="file">iblock/a93/fh6b6lbstgxniq6vw1pg5dpngoj7ldr4.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value><![CDATA[Уют <br> может быть теплым 2]]></value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>html</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>slayd3</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>35</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+
+</items>

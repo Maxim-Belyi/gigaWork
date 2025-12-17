@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items iblockUid="Content:Карточки имиджевой" exchangeVersion="2" >
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Душевые ширмы из коллекции Safari</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="icon-1.png" type="file">iblock/b09/c4ifiqmg29owqec8ljs4focik9o3ybub.png</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Душевые ширмы изготавливаются из закалённого стекла, толщиной 6-8 миллиметров. Основными преимуществами такого материала является высокая степень термостойкости</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE"/>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>116</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Душевые ширмы из коллекции Safari</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="icon-2.png" type="file">iblock/613/6dov1i8y7rd5ac91lehqmgukdup0rtis.png</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Защищает поверхность стекла от коррозии,  многократно уменьшает развитие бактерий и накопление на ней любых загрязнений.</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE"/>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>117</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Душевые ширмы из коллекции Safari</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="icon-3.png" type="file">iblock/2f0/c1ic4cjzvrjzrttjqjuvaunjs8koh0rg.png</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Высокая ударопрочность, никакое механическое повреждение не может изменить целостность полотна закаленного стекла. В случае, если удар пришелся в торец полотна, стекло разбивается,</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE"/>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>118</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM"/>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Душевые ширмы из коллекции Safari</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="icon-1.png" type="file">iblock/b09/c4ifiqmg29owqec8ljs4focik9o3ybub.png</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Душевые ширмы изготавливаются из закалённого стекла, толщиной 6-8 миллиметров. Основными преимуществами такого материала является высокая степень термостойкости </value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE"/>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>119</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+</item>
+
+</items>

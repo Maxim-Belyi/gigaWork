@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items iblockUid="Review:Отзывы" exchangeVersion="2" >
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Константин</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT">
+  <value>Уважаемый Константин, спасибо за ваш отзыв. Мы рады, что наша продукция вам подошла.&#13;
+&#13;
+</value>
+ </field>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>Константин</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>87</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply">
+  <value>Уважаемый Константин, спасибо за ваш отзыв. Мы рады, что наша продукция вам подошла.</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Александр</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.&#13;
+&#13;
+</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>rewirew3</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>88</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply">
+  <value>Уважаемый Александр, спасибо за ваш отзыв. Мы рады, что наша продукция вам подошла.</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Василий</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.&#13;
+&#13;
+</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>rewiev2</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>89</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply">
+  <value>Уважаемый Василий, спасибо за ваш отзыв. Мы рады, что наша продукция вам подошла.</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Константин Константинопольский</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>review4</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>90</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Евгения Иванова</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.&#13;
+&#13;
+</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>review5</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>91</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Кристина Иванчук</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Чуть ли не единственный вариант 85*85, который нашел. Низкая цена. Подробная инструкция по сборке, комплектующие разложены по маркированным пакетам, сложностей не возникает.&#13;
+&#13;
+</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>review6</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>92</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Евгений Онегин</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices velit nec mattis tempor. Maecenas nec iaculis mi. Cras hendrerit suscipit est, quis congue velit suscipit sit amet. Suspendisse non vestibulum ante. Sed sed rutrum dui, pharetra rutrum lorem. Cras non sapien tincidunt, blandit velit ac, condimentum sem. Suspendisse ac mauris sit amet leo consectetur tristique. Morbi ac nisi aliquet, consequat arcu volutpat, interdum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vel ipsum at leo aliquam fringilla. Etiam ullamcorper tempor erat, et ullamcorper felis porta et. Praesent consectetur ipsum augue, et tempus felis varius quis. Integer dapibus commodo dolor sed fermentum.</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>review8</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>94</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="admin_reply">
+  <value>Спасибо за отзыв Евгений</value>
+ </property>
+</item>
+
+</items>

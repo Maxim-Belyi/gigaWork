@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items iblockUid="collaboration:Сотрудничество" exchangeVersion="2" >
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>17.12.2025 06:39:32</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>максим</value>
+ </field>
+ <field name="PREVIEW_PICTURE"/>
+ <field name="PREVIEW_TEXT">
+  <value>рога и копытарога и копытарога и копытарога и копытарога и копытарога и копыта</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE"/>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>114</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="PHONE_NUMBER">
+  <value>+7 (848) 485-45-45</value>
+ </property>
+ <property name="EMAIL">
+  <value>kotozosdfds@mail.com</value>
+ </property>
+ <property name="COMPANY_NAME">
+  <value>рога и копыта</value>
+ </property>
+</item>
+
+</items>

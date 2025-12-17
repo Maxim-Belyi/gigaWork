@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items iblockUid="Articles:article" exchangeVersion="2" >
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья1</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-1.jpg" type="file">iblock/9f6/nxkiqojioor0dzk3krgk0t63d9jlbb36.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>article1</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>59</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_ENCLOSURES</value>
+ </property>
+ <property name="IS_BIG">
+  <value>Y</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья9</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya9</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>67</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_ENCLOSURES</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья10</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-1.jpg" type="file">iblock/9f6/nxkiqojioor0dzk3krgk0t63d9jlbb36.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya10</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>68</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья11</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-2.jpg" type="file">iblock/965/7aduh2szep27lg4ioe4yewgrfx8r521d.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya11</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>69</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>CARE</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья12</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya12</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>70</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_ENCLOSURES</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья13</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-2.jpg" type="file">iblock/965/7aduh2szep27lg4ioe4yewgrfx8r521d.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya13</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>71</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>CARE</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья14</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya14</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>72</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_ENCLOSURES</value>
+ </property>
+ <property name="IS_BIG">
+  <value>Y</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья15</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya15</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>73</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>статья16</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-2.jpg" type="file">iblock/965/7aduh2szep27lg4ioe4yewgrfx8r521d.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya16</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>74</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья17</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya17</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>75</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья18</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-2.jpg" type="file">iblock/965/7aduh2szep27lg4ioe4yewgrfx8r521d.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya18</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>76</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья19</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya19</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>77</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG">
+  <value>Y</value>
+ </property>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья20</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-2.jpg" type="file">iblock/965/7aduh2szep27lg4ioe4yewgrfx8r521d.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya20</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>78</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья21</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya21</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>79</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>SHOWER_TRAYS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья22</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-1.jpg" type="file">iblock/9f6/nxkiqojioor0dzk3krgk0t63d9jlbb36.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya22</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>80</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья23</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya23</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>81</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья24</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya24</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>82</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья25</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-1.jpg" type="file">iblock/9f6/nxkiqojioor0dzk3krgk0t63d9jlbb36.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya25</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>83</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья26</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya26</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>84</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья27</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-3.jpg" type="file">iblock/73c/q21695wm3ytqcbqwabk4ce44uz5ayijn.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya27</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>85</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+
+<item>
+ <field name="ACTIVE">
+  <value>Y</value>
+ </field>
+ <field name="ACTIVE_FROM">
+  <value>15.04.2021</value>
+ </field>
+ <field name="ACTIVE_TO"/>
+ <field name="SORT">
+  <value>500</value>
+ </field>
+ <field name="NAME">
+  <value>Статья28</value>
+ </field>
+ <field name="PREVIEW_PICTURE">
+  <value name="article-1.jpg" type="file">iblock/9f6/nxkiqojioor0dzk3krgk0t63d9jlbb36.jpg</value>
+ </field>
+ <field name="PREVIEW_TEXT">
+  <value>Угловые души: увеличьте пространство в ванной комнате</value>
+ </field>
+ <field name="PREVIEW_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="DETAIL_PICTURE"/>
+ <field name="DETAIL_TEXT"/>
+ <field name="DETAIL_TEXT_TYPE">
+  <value>text</value>
+ </field>
+ <field name="CODE">
+  <value>statya28</value>
+ </field>
+ <field name="TAGS"/>
+ <field name="XML_ID">
+  <value>86</value>
+ </field>
+ <field name="IBLOCK_SECTION"/>
+ <field name="IPROPERTY_TEMPLATES"/>
+ <property name="ARTICLE_TAG">
+  <value>TRENDS</value>
+ </property>
+ <property name="IS_BIG"/>
+</item>
+
+</items>
