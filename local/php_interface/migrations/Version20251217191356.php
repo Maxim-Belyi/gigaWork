@@ -3,7 +3,7 @@
 namespace Sprint\Migration;
 
 
-class Version20251217183023 extends Version
+class Version20251217191356 extends Version
 {
     protected $author = "admin";
 
@@ -47,10 +47,10 @@ class Version20251217183023 extends Version
   array (
     0 => 's1',
   ),
-  'CODE' => 'Слайдер на главной',
-  'API_CODE' => 'mainPageSlider',
+  'CODE' => 'Галерея о нас',
+  'API_CODE' => 'AboutUsGallery',
   'REST_ON' => 'N',
-  'NAME' => 'Слайдер на главной',
+  'NAME' => 'Галерея о нас',
   'ACTIVE' => 'Y',
   'SORT' => '500',
   'LIST_PAGE_URL' => '#SITE_DIR#/Content/index.php?ID=#IBLOCK_ID#',
@@ -237,11 +237,11 @@ class Version20251217183023 extends Version
   'CODE' => 
   array (
     'NAME' => 'Символьный код',
-    'IS_REQUIRED' => 'Y',
+    'IS_REQUIRED' => 'N',
     'DEFAULT_VALUE' => 
     array (
-      'UNIQUE' => 'Y',
-      'TRANSLITERATION' => 'Y',
+      'UNIQUE' => 'N',
+      'TRANSLITERATION' => 'N',
       'TRANS_LEN' => 100,
       'TRANS_CASE' => 'L',
       'TRANS_SPACE' => '-',
@@ -403,6 +403,7 @@ class Version20251217183023 extends Version
 ));
     $helper->Iblock()->saveGroupPermissions($iblockId, array (
   'administrators' => 'X',
+  'everyone' => 'R',
 ));
     $helper->UserOptions()->saveElementGrid($iblockId, array (
   'views' => 
