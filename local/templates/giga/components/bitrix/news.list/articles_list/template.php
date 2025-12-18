@@ -85,7 +85,7 @@ $finalGroups = $sortedGroups;
                         ?>
 
                         <a class="article-item <?php if ($isBig): ?>article-item--big<?php endif ?>"
-                            href="<?= $arItem["DETAIL_PAGE_URL"] ?>" id="<?= $this->GetEditAreaId($uniqueComponentId); ?>">
+                            href="/typical/" id="<?= $this->GetEditAreaId($uniqueComponentId); ?>">
 
                             <div class="article-item__img">
                                 <?php if ($arItem["PREVIEW_PICTURE"]["SRC"]): ?>
