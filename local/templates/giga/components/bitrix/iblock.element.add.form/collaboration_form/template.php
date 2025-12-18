@@ -20,15 +20,15 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 
 				<div class="custom-input">
 					<input class="custom-input__input" type="text" placeholder="Введите Телефон" inputmode="numeric"
-						data-mask-phone name="PROPERTY[15][0]"
-						value="<?= $arResult["ELEMENT_PROPERTIES"][15][0]["VALUE"] ?>">
+						data-mask-phone name="PROPERTY[31][0]"
+						value="<?= $arResult["ELEMENT_PROPERTIES"][31][0]["VALUE"] ?>">
 					<span class="custom-input__error">Текст ошибки</span>
 					<label class="custom-input__label">Телефон</label>
 				</div>
 
 				<div class="custom-input">
-					<input class="custom-input__input" type="text" placeholder="Введите E-mail" name="PROPERTY[16][0]"
-						value="<?= $arResult["ELEMENT_PROPERTIES"][16][0]["VALUE"] ?>">
+					<input class="custom-input__input" type="text" placeholder="Введите E-mail" name="PROPERTY[32][0]"
+						value="<?= $arResult["ELEMENT_PROPERTIES"][32][0]["VALUE"] ?>">
 
 					<span class="custom-input__error">Текст ошибки</span>
 					<label class="custom-input__label">E-mail</label>
@@ -36,7 +36,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 
 				<div class="custom-input">
 					<input class="custom-input__input" type="text" placeholder="Введите Название компании"
-						name="PROPERTY[17][0]" value="<?= $arResult["ELEMENT_PROPERTIES"][17][0]["VALUE"] ?>">
+						name="PROPERTY[33][0]" value="<?= $arResult["ELEMENT_PROPERTIES"][33][0]["VALUE"] ?>">
 					<span class="custom-input__error">Текст ошибки</span>
 					<label class="custom-input__label">Название компании</label>
 				</div>
